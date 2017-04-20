@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 {% load static %}
 
-{% block html_tag %}<html lang='en'>{% endblock %}
+{% block html_tag %}
+	<html lang='en'>
+{% endblock %}
+
 	<head>
 		{% block head_defaultContent %}
 			
@@ -12,24 +15,42 @@
 			{% block head_title %}
 			{% endblock %}
 
-		{% endblock %}
+			{% block head_resetsheet %}
+				<link rel="stylesheet" type="text/css" href="{% static "/core/css/reset.css" %}" />
+			{% endblock %}
 
+			{% block head_stylesheets %}
+				<link rel="stylesheet" type="text/css" href="{% static "/core/css/main.css" %}" />
+			{% endblock %}
+
+		{% endblock %}
 	</head>
+
 	<body>
-		<div id="wrapper">
-		{% block body_header %}
-			<header>
-			</header>
-        {% endblock %}
+		{% block body_defaultContent %}
+			<div id="wrapper">
+			{% block body_header %}
+				<header>
+					<nav></nav>
+				</header>
+   	     	{% endblock %}	
 
-        {% block body_content %}
-        {% endblock %}
+   	     	<div id="body_wrapper">
+	        {% block body_content %}
+   	    	 	
+    	    	
+        	{% endblock %}
+        	</div><!-- End of #body_wrapper -->
+        	
+        	{% block body_footer %}
+        		<div id="footer">
+        		</div> <!-- End of #footer -->
+        	{% endblock %}
 
-        {% block body_footer %}
-        {% endblock %}
-
-		{% block body_scripts %}
+			{% block body_scripts %}
+			{% endblock %}
+			</div>		
 		{% endblock %}
-		</div>
 	</body>
+
 </html>

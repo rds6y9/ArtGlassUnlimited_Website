@@ -4,6 +4,10 @@
 		<title>AGU | Home</title>
 	{% endblock %}
 
+	{% block head_home_stylesheets %}
+		<link rel="stylesheet" type="text/css" href="{% static "/home/css/home.css" %}" />
+	{% endblock %}
+
 	{% block body_content %}
-		<h1>Welcome home!</h1>	
+		<h1>Home Page</h1>
 	{% endblock %}
