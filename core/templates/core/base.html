@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+
+{% block html_tag %}<html lang='en'>{% endblock %}
+	<head>
+		{% block head_defaultContent %}
+			
+			{% block head_charset %}
+				<meta charset="utf-8" />
+			{% endblock %}
+			
+			{% block head_title %}
+			{% endblock %}
+
+		{% endblock %}
+
+	</head>
+	<body>
+		<div id="wrapper">
+		{% block body_header %}
+			<header>
+			</header>
+        {% endblock %}
+
+        {% block body_content %}
+        {% endblock %}
+
+        {% block body_footer %}
+        {% endblock %}
+
+		{% block body_scripts %}
+		{% endblock %}
+		</div>
+	</body>
+</html>
