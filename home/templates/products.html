@@ -4,10 +4,23 @@
 		<title>AGU | Products</title>
 	{% endblock %}
 
-	{% block head_home_stylesheets %}
+	{% block head_subset_stylesheets %}
 		<link rel="stylesheet" type="text/css" href="{% static "/home/css/products.css" %}" />
 	{% endblock %}
 
 	{% block body_content %}
 		<h1>Products Page</h1>	
+	{% endblock %}
+
+	
+	{% block body_header %}
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a class="active" href="#">Products</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 	{% endblock %}
