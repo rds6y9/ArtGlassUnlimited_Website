@@ -9,18 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="{% static "/home/css/contact.css" %}" />
 	{% endblock %}
 
-	{% block body_header %}
-		<header>
-			<nav>
-				<ul>
-					<li><a href="{% url 'home' %}">Home</a></li>
-					<li><a href="{% url 'products' %}">Products</a></li>
-					<li><a href="{% url 'contact' %}" class="active">Contact</a></li>
-				</ul>		
-			</nav>
-		</header>
-   	{% endblock %}	
-
 	{% block body_content %}
 		<h1>Contact Page</h1>	
 	{% endblock %}

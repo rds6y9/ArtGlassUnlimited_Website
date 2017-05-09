@@ -9,18 +9,6 @@
 		<link rel="stylesheet" type="text/css" href="{% static "/home/css/home.css" %}" />
 	{% endblock %}
 
-	{% block body_header %}
-		<header>
-			<nav>
-				<ul>
-					<li><a href="{% url 'home' %}" class="active">Home</a></li>
-					<li><a href="{% url 'products' %}">Products</a></li>
-					<li><a href="{% url 'contact' %}">Contact</a></li>
-				</ul>		
-			</nav>
-		</header>
-   	{% endblock %}	
-
 	{% block body_content %}
 		<h1>Home Page</h1>
 	{% endblock %}
