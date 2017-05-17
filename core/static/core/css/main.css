@@ -1,10 +1,10 @@
 /* CSS for core/base.html */
-html {
-	background-color: #005663;
+
+html, body {
+	height: 100%;
 }
 
 header {
-	width: 100%;
 	height: 200px;
 	position: relative;
 	background-color: #005663;
@@ -19,7 +19,7 @@ nav {
 	position: absolute;
 	bottom: 0;
 	background-color: #FFF;
-	box-shadow: 0px 2px 5px #888
+	box-shadow: 0px 3px 5px #888
 }
 
 nav ul {
@@ -49,16 +49,17 @@ li a {
 
 li a:hover {
 	background-color: #005663;
-	color: #fff;
+	color: #FFF;
 }
 
 #wrapper{
-	position: relative;
+	min-height: 100%;
+	height: 100%;
 }
 
 #body_content_wrapper {
-	min-height: 480px;
-	padding-top: 10px;
+	min-height: 100%;
+	padding-top: 25px;
 	padding-left: 5%;
 	padding-right: 5%;
 	background-color: #FFF;
@@ -76,12 +77,12 @@ li a:hover {
 	font-size: 50px;
 }
 
-#footer {
+footer {
+	position: absolute;
 	width: 100%;
 	height: 100px;
-	position: absolute;
-	bottom: 0;
 	background-color: #005663;
+	margin-top: -100px;
 }
 
 #contact_info {
