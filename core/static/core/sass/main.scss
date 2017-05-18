@@ -1,16 +1,27 @@
 /* CSS for core/base.html */
 
 $primary-color: #005663;
+$secondary-color: #66ffcc;
+$backup-color: #f48942;
+$mygray: #999999;
+$header-height: 200px;
+$footer-height: 100px;
+$footer-and-margin-height: 125px;
 
-html, body {
+html {
 	height: 100%;
 }
 
+body {
+	min-height: 100%;
+}
+
 header {
-	height: 200px;
 	position: relative;
+	height: $header-height;
+	margin-top: -$header-height;
 	background-color: $primary-color;
-	color: #FFF;
+	color: #fff;
 }
 
 nav {
@@ -20,7 +31,7 @@ nav {
 	margin: 0 auto;
 	position: absolute;
 	bottom: 0;
-	background-color: #FFF;
+	background-color: #fff;
 	box-shadow: 0px 3px 5px #888
 }
 
@@ -51,20 +62,7 @@ li a {
 
 li a:hover {
 	background-color: $primary-color;
-	color: #FFF;
-}
-
-#wrapper{
-	min-height: 100%;
-	height: 100%;
-}
-
-#body_content_wrapper {
-	min-height: 100%;
-	padding-top: 25px;
-	padding-left: 5%;
-	padding-right: 5%;
-	background-color: #FFF;
+	color: #fff;
 }
 
 #logo {
@@ -79,12 +77,28 @@ li a:hover {
 	font-size: 50px;
 }
 
-footer {
+#wrapper{
+	padding: $header-height 0 $footer-height;
 	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#body_content_wrapper {
+	min-height: 100%;
+	padding-top: 25px;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: $footer-and-margin-height;
+}
+
+footer {
 	width: 100%;
-	height: 100px;
-	background-color: $primary-color;
+	height: $footer-height;
 	margin-top: -100px;
+	background-color: $primary-color;
 }
 
 #contact_info {
@@ -102,5 +116,5 @@ footer {
 #my_info {
 	font-size: 10px;
 	padding-top: 20px;
-	color: #999;
+	color: $mygray;
 }
