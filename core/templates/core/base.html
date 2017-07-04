@@ -23,46 +23,71 @@
 				<link rel="stylesheet" type="text/css" href="{% static "/core/css/main.css" %}" />
 			{% endblock %}
 
+			{% block head_javascript %}
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script type="text/javascript" src="{% static "/core/js/navigation.js" %}"></script>
+			{% endblock %}
+
 		{% endblock %}
 	</head>
 
 	<body>
-		{% block body_defaultContent %}
-			<div id="wrapper">
-			{% block body_header %}
-				<header>
-					<div id="logo">
-						<h1 id="logo-placeholder">Art Glass Unlimited</h1>
-					</div>
-					<nav>
-						<ul>
-							<li><a href="{% url 'home' %}">Home</a></li>
-							<li><a href="{% url 'products' %}">Products</a></li>
-							<li><a href="{% url 'contact' %}">Contact</a></li>
-						</ul>
-					</nav>
-				</header>
-   	     	{% endblock %}	
-
-   	     		<div id="body_content_wrapper">
-	        {% block body_content %}
-    	    	
-        	{% endblock %}
-        		</div><!-- End of #body_content_wrapper -->
-        	
-        	{% block body_footer %}
-        		<footer>
-        			<div id="contact_info">
-        				<p id="agu_info">Owned by Gerald Mowery - Located in Pacific, MO 63069</p>
-        				<p id="my_info">Website designed by Ryan Stoughton</p>
-        			</div>
-        		</footer> <!-- End of #footer -->
-        	{% endblock %}
-
-			{% block body_scripts %}
-			{% endblock %}
-			</div> <!-- End of #wrapper -->		
+		<div id="page-wrapper">
+		{% block page_header %}
+			<div id="header">
+				<div id="logo-well">
+					<a href="#" id="logo">Art Glass <i>Unlimited</i></a>	
+				</div> <!-- End of logo-well -->
+				<div id="nav-well">
+					<ul>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'products' %}">Products</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>	
+				</div> <!-- End of nav-well -->
+				<button id="dropdown-nav" onclick="showAndHideMenu()">
+					<div class="burger-patty first-patty"></div>
+					<div class="burger-patty"></div>
+					<div class="burger-patty"></div>
+				</button> <!-- End of dropdown-nav -->
+			</div> <!-- End of header -->
+			<div id="dropdown-nav-menu">
+				<ul>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'products' %}">Products</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>	
+			</div> <!-- End of dropdown-nav-menu -->
+			<div id="extended-nav">
+				<ul>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'products' %}">Products</a></li>
+					<li><a href="{% url 'contact' %}">Contact</a></li>
+				</ul>
+			</div> <!-- End of extended-nav -->
 		{% endblock %}
-	</body>
+
+			<div id="content-wrapper">
+				<div id="content">
+				{% block body_content %}
+				{% endblock %}
+				</div> <!-- End of content -->
+			</div> <!-- End of content-wrapper -->
+
+		{% block page_footer %}
+			<div id="footer">
+				<div id="property-well">
+					<p id="agu">Located in Pacific, MO | Owned by Gerald Mowery</p>
+					<p id="mine">Website created by Ryan Stoughton</p>
+				</div>
+
+				<div id="around-the-web-well">
+					<p>Catch Art Glass Unlimited Around the Web!</p>
+				</div> <!-- End of around-the-web-well -->
+			</div> <!-- End of footer -->
+		{% endblock %}
+
+		</div> <!-- End of page-wrapper -->
+	</body>	
 
 </html>
