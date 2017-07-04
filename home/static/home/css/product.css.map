@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,+BAA+B",
+"sources": ["../sass/product.scss"],
 "names": [],
 "file": "product.css"
 }
