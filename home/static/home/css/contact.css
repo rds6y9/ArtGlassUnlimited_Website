@@ -1,3 +1,52 @@
 /* CSS for home/contact.html */
+#contact-container {
+  width: 100%;
+  height: 500px;
+  background-color: #CC00FF; }
+
+#picture-well {
+  float: left;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  line-height: 500px; }
+
+#picture-well > img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle; }
+
+#info-well {
+  float: left;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+  color: white; }
+
+#info-well > h1 {
+  font-family: Damion;
+  font-size: 48px;
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+#info-well > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+#info-well > table {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: left; }
+
+td:first-child {
+  padding-right: 10px; }
+
+#greeting {
+  font-family: Damion;
+  font-size: 48px;
+  color: black;
+  text-align: center;
+  padding: 50px 100px; }
 
 /*# sourceMappingURL=contact.css.map */
