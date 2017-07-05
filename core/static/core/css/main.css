@@ -35,11 +35,14 @@ body {
   #logo-well #logo {
     display: block;
     text-decoration: none;
-    font-family: Arial;
+    font-family: Damion;
     font-size: 32px;
     line-height: 70px;
     padding-left: 20px;
     color: black; }
+  #logo-well #logo:hover {
+    background-color: #4f7fff;
+    color: white; }
 
 #nav-well {
   width: 400px;
@@ -61,14 +64,14 @@ body {
       font-family: Arial;
       color: black; }
     #nav-well li #home-nav:hover {
+      background-color: rgba(79, 127, 255, 0.2);
       border-bottom: 6px solid #4f7fff; }
     #nav-well li #products-nav:hover {
+      background-color: rgba(191, 0, 0, 0.2);
       border-bottom: 6px solid #bf0000; }
     #nav-well li #contact-nav:hover {
+      background-color: rgba(204, 0, 255, 0.2);
       border-bottom: 6px solid #CC00FF; }
-
-.active {
-  border-bottom: 6px solid #abcabc; }
 
 #dropdown-nav {
   display: none;
@@ -77,7 +80,7 @@ body {
 
 #dropdown-nav-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 70px;
   right: 0;
   min-width: 100px;

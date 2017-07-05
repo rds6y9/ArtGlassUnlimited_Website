@@ -11,5 +11,46 @@
 	{% endblock %}
 
 	{% block body_content %}
-	<div id="contact-container"></div>
+	<div id="contact-container">
+		<div id="picture-well">
+			<img src="{% static "/home/img/contact/profile_pic.png" %}" />
+		</div>
+		<div id="info-well">
+			<h1 id="contact-info">Contact Information</h1>
+			<p>Phone: (314) 596 - 8101</p>
+			<p>Address: 1234 Name Street<br />Pacific, MO 65432</p>
+			<h1 id="business-hours">Business Hours</h1>
+			<table>
+				<tr>
+					<td>Monday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<h1 id="greeting">We Hope To Hear From You Soon!</h1>
 	{% endblock %}

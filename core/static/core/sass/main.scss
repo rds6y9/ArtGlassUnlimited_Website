@@ -1,12 +1,8 @@
 /* CSS for core/base.html */
 
-$primary-color: #AA00FF;
-$secondary-color: #4499AA;
-$tertiary-color: #00F000;
 $home-color: #4f7fff;
 $products-color: #bf0000;
 $contact-color: #CC00FF;
-$active-color: #abcabc;
 $header-height: 70px;
 $extended-nav-height: 40px;
 $footer-height: 100px;
@@ -39,11 +35,9 @@ body {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
-	// background-color: #AAAAAA;
 }
 
 #header {
-	// Header stays visible at the top of the page at all times.
 	position: fixed;
 	width: 100%;
 	height: $header-height;
@@ -61,11 +55,16 @@ body {
 	#logo {
 		display: block;
 		text-decoration: none;
-		font-family: Arial;
+		font-family: Damion;
 		font-size: 32px;
 		line-height: $header-height;
 		padding-left: 20px;
 		color: black;
+	}
+
+	#logo:hover {
+		background-color: $home-color;
+		color: white;
 	}
 }
 
@@ -95,21 +94,20 @@ body {
 		}
 
 		#home-nav:hover {
+			background-color: rgba($home-color, 0.2);
 			border-bottom: 6px solid $home-color;
 		}
 
 		#products-nav:hover {
+			background-color: rgba($products-color, 0.2);
 			border-bottom: 6px solid $products-color;
 		}
 
 		#contact-nav:hover {
+			background-color: rgba($contact-color, 0.2);
 			border-bottom: 6px solid $contact-color;
 		}
 	}
-}
-
-.active {
-	border-bottom: 6px solid $active-color;
 }
 
 #dropdown-nav {
@@ -120,7 +118,7 @@ body {
 
 #dropdown-nav-menu {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: $header-height;
 	right: 0;
 	min-width: 100px;
