@@ -1,3 +1,46 @@
-/* CSS for home/product.html */
+/* CSS for home/products.html */
+@font-face {
+  font-family: Damion;
+  src: url("../../../../core/static/core/font/damion-regular.ttf"); }
+#product-container {
+  width: 100%;
+  min-height: 800px;
+  background-color: #bf0000; }
+
+#contact-us-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  min-height: 100px; }
+
+#contact-us-container > h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Damion;
+  font-size: 48px;
+  color: black;
+  text-align: center; }
+
+#contact-us-container > p {
+  padding-top: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  color: black;
+  text-align: center; }
+
+#contact-us-container > p > a {
+  text-decoration: none;
+  color: black; }
+
+.focus {
+  user-select: none;
+  padding: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+  border: 1px solid #bbb; }
+
+.focus:hover {
+  background-color: #aaa;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=product.css.map */

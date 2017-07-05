@@ -7,11 +7,15 @@
 
 	{% block head_stylesheets %}
 		<link rel="stylesheet" type="text/css" href="{% static "/core/css/main.css" %}" />
-		<link rel="stylesheet" type="text/css" href="{% static "/home/css/products.css" %}" />
+		<link rel="stylesheet" type="text/css" href="{% static "/home/css/product.css" %}" />
 	{% endblock %}
 
 	{% block body_content %}
-	<p>Product Page</p>
+	<div id="product-container"></div>
+	<div id="contact-us-container">
+		<h1>Have Something Else In Mind?</h1>
+		<p><a href="{% url 'contact' %}"><span class="focus"><i>Contact Us Now</i></span></a> to design the perfect piece for you!</p>
+	</div>
 	{% endblock %}
 
 	
