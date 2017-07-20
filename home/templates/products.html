@@ -10,8 +10,70 @@
 		<link rel="stylesheet" type="text/css" href="{% static "/home/css/product.css" %}" />
 	{% endblock %}
 
+	{% block page_header %}
+		<div id="header">
+			<div id="logo-well">
+				<a href="{% url 'home' %}" id="logo">Art Glass Unlimited</a>	
+			</div> <!-- End of logo-well -->
+			<div id="nav-well">
+				<ul>
+					<li><a id="home-nav" href="{% url 'home' %}">Home</a></li>
+					<li><a id="products-nav" class="onpage" href="{% url 'products' %}">Products</a></li>
+					<li><a id="contact-nav" href="{% url 'contact' %}">Contact</a></li>
+				</ul>	
+			</div> <!-- End of nav-well -->
+			<button id="dropdown-nav" onclick="showAndHideMenu()">
+				<div class="burger-patty first-patty"></div>
+				<div class="burger-patty"></div>
+				<div class="burger-patty"></div>
+			</button> <!-- End of dropdown-nav -->
+		</div> <!-- End of header -->
+		<div id="dropdown-nav-menu">
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'products' %}">Products</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+			</ul>	
+		</div> <!-- End of dropdown-nav-menu -->
+		<div id="extended-nav">
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'products' %}">Products</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+			</ul>
+		</div> <!-- End of extended-nav -->
+	{% endblock %}
+
 	{% block body_content %}
-	<div id="product-container"></div>
+	<div id="filter-zone">
+		<h1>Filter Zone</h1>
+	</div>
+
+	<div id="product-container">
+		<div id="product-flex-container">
+			<div class="product-card">
+				<div class="product-card-picture"></div>
+				<div class="product-card-quicknotes"></div>
+				<div class="product-card-description"></div>
+			</div>
+			<div class="product-card">
+				<div class="product-card-picture"></div>
+				<div class="product-card-quicknotes"></div>
+				<div class="product-card-description"></div>
+			</div>
+			<div class="product-card">
+				<div class="product-card-picture"></div>
+				<div class="product-card-quicknotes"></div>
+				<div class="product-card-description"></div>
+			</div>
+			<div class="product-card">
+				<div class="product-card-picture"></div>
+				<div class="product-card-quicknotes"></div>
+				<div class="product-card-description"></div>
+			</div>
+		</div>
+	</div>
+
 	<div id="contact-us-container">
 		<h1>Have Something Else In Mind?</h1>
 		<p><a href="{% url 'contact' %}"><span class="focus"><i>Contact Us Now</i></span></a> to create the perfect piece for you!</p>

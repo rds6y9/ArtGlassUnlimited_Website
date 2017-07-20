@@ -3,7 +3,7 @@
   font-family: Damion;
   src: url("../font/damion-regular.ttf"); }
 html {
-  min-width: 370px;
+  min-width: 100%;
   height: 100%;
   min-height: 100%; }
 
@@ -12,6 +12,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100%;
+  min-width: 100%;
   background-image: url("http://www.iorise.com/blog/wp-content/uploads/2015/06/2015-06-23_FleurdesLis_EN-CA10873676100_1920x1080.jpg"); }
 
 #page-wrapper {
@@ -26,7 +27,7 @@ body {
   box-shadow: 1px 1px 5px #555555;
   overflow: hidden;
   z-index: 9999;
-  background-color: #EEEEEE; }
+  background-color: #eeeeee; }
 
 #logo-well {
   width: 300px;
@@ -85,7 +86,7 @@ body {
   right: 0;
   min-width: 100px;
   z-index: 10000;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   border: 1px solid black; }
   #dropdown-nav-menu ul {
     list-style-type: none; }

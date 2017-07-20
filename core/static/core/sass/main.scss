@@ -3,6 +3,7 @@
 $home-color: #4f7fff;
 $products-color: #bf0000;
 $contact-color: #CC00FF;
+$offwhite: #eeeeee;
 $header-height: 70px;
 $extended-nav-height: 40px;
 $footer-height: 100px;
@@ -18,7 +19,7 @@ $header-dropdown-breakpoint: $minimum-width;
 }
 
 html {
-	min-width: $minimum-width;
+	min-width: 100%;
 	height: 100%;
 	min-height: 100%;
 }
@@ -28,6 +29,7 @@ body {
 	width: 100%;
 	height: 100%;
 	min-height: 100%;
+	min-width: 100%;
 	background-image: url("http://www.iorise.com/blog/wp-content/uploads/2015/06/2015-06-23_FleurdesLis_EN-CA10873676100_1920x1080.jpg");
 }
 
@@ -44,7 +46,7 @@ body {
 	box-shadow: 1px 1px 5px #555555;
 	overflow: hidden;
 	z-index: 9999;
-	background-color: #EEEEEE;
+	background-color: $offwhite;
 }
 
 #logo-well {
@@ -123,7 +125,7 @@ body {
 	right: 0;
 	min-width: 100px;
 	z-index: 10000;
-	background-color: #EEEEEE;
+	background-color: $offwhite;
 	border: 1px solid black;
 
 	ul {

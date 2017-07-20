@@ -10,6 +10,40 @@
 		<link rel="stylesheet" type="text/css" href="{% static "/home/css/contact.css" %}" />
 	{% endblock %}
 
+	{% block page_header %}
+		<div id="header">
+			<div id="logo-well">
+				<a href="{% url 'home' %}" id="logo">Art Glass Unlimited</a>	
+			</div> <!-- End of logo-well -->
+			<div id="nav-well">
+				<ul>
+					<li><a id="home-nav" href="{% url 'home' %}">Home</a></li>
+					<li><a id="products-nav" href="{% url 'products' %}">Products</a></li>
+					<li><a id="contact-nav" class="onpage" href="{% url 'contact' %}">Contact</a></li>
+				</ul>	
+			</div> <!-- End of nav-well -->
+			<button id="dropdown-nav" onclick="showAndHideMenu()">
+				<div class="burger-patty first-patty"></div>
+				<div class="burger-patty"></div>
+				<div class="burger-patty"></div>
+			</button> <!-- End of dropdown-nav -->
+		</div> <!-- End of header -->
+		<div id="dropdown-nav-menu">
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'products' %}">Products</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+			</ul>	
+		</div> <!-- End of dropdown-nav-menu -->
+		<div id="extended-nav">
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'products' %}">Products</a></li>
+				<li><a href="{% url 'contact' %}">Contact</a></li>
+			</ul>
+		</div> <!-- End of extended-nav -->
+	{% endblock %}
+
 	{% block body_content %}
 	<div id="contact-container">
 		<div id="picture-well">
