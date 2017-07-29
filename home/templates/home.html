@@ -53,21 +53,31 @@
 	{% block body_content %}
 	<div id="carousel-container">
 		<div id="home-carousel">
-			<img class="slides" src="{% static "/home/img/home/sampleSlide1.jpg" %}" />
+		{% for carousel_slide in carousel_slides %}
+			<img class="slides" src="{{ carousel_slide.image.url }}" 
+				alt="Unable to find the current image." />
+		{% endfor %}
+			<!-- <img class="slides" src="{% static "/home/img/home/sampleSlide1.jpg" %}" />
 			<img class="slides" src="{% static "/home/img/home/sampleSlide2.jpg" %}" />
-			<img class="slides" src="{% static "/home/img/home/sampleSlide3.jpg" %}" />
+			<img class="slides" src="{% static "/home/img/home/sampleSlide3.jpg" %}" /> -->
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			<div id="info-box">
-				<p class="slide-text selected-text">Hello</p>
+			{% for carousel_slide in carousel_slides %}
+				<p class="slide-text">{{ carousel_slide.caption }}</p>
+			{% endfor %}
+				<!-- <p class="slide-text selected-text">Hello</p>
 				<p class="slide-text">Hey</p>
-				<p class="slide-text">Hi</p>
+				<p class="slide-text">Hi</p> -->
 			</div>
 		</div>
 		<div id="dot-container">
-			<span class="dots selected-dot"></span>
+		{% for _ in carousel_slides %}
 			<span class="dots"></span>
+		{% endfor %}
+			<!-- <span class="dots"></span>
 			<span class="dots"></span>
+			<span class="dots"></span> -->
 		</div>
 	</div>
 	
