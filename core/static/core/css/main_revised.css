@@ -1,0 +1,90 @@
+/* --------------------------------------------
+:: Stylesheet for base_revised.html
+-------------------------------------------- */
+html {
+  min-width: 100%;
+  min-height: 100%; }
+
+body {
+  min-width: 100%;
+  min-height: 100%; }
+
+.grid-container {
+  display: grid;
+  grid-template: "header" "content-wrapper" "footer";
+  width: 100%;
+  min-width: 100%;
+  height: 100%; }
+
+.header {
+  grid-area: "header";
+  display: grid;
+  grid-template: "logo nav";
+  position: fixed;
+  width: 100%;
+  min-width: 100%;
+  height: 80px;
+  border-bottom: 2px solid black;
+  background-color: white; }
+  .header .logo {
+    grid-area: "logo";
+    min-width: 300px; }
+    .header .logo h1 {
+      font-family: Arial;
+      font-size: 26px;
+      text-align: center;
+      line-height: 80px; }
+  .header .nav {
+    grid-area: "nav";
+    min-width: 50px; }
+    .header .nav #dropdown-nav {
+      display: block;
+      height: 80px;
+      margin: 0 auto;
+      border: none;
+      background-color: inherit; }
+      .header .nav #dropdown-nav .burger-patty {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 6px 0; }
+      .header .nav #dropdown-nav .first-patty {
+        margin: 12px 0px 6px 0px; }
+    .header .nav #dropdown-nav-menu {
+      display: none;
+      position: fixed;
+      top: 80px;
+      right: 0;
+      min-width: 100px;
+      border: 1px solid black;
+      background-color: white; }
+      .header .nav #dropdown-nav-menu ul {
+        list-style-type: none; }
+        .header .nav #dropdown-nav-menu ul li {
+          text-align: center;
+          border-bottom: 1px solid black; }
+          .header .nav #dropdown-nav-menu ul li a {
+            display: block;
+            font-family: Arial;
+            text-decoration: none;
+            color: black;
+            padding: 10px 0px; }
+          .header .nav #dropdown-nav-menu ul li a:hover {
+            background-color: #AAAAAA; }
+
+.content-wrapper {
+  grid-area: "content-wrapper";
+  min-height: 100vh; }
+  .content-wrapper .content {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 200px;
+    background-color: #bbb; }
+
+.footer {
+  grid-area: "footer";
+  height: 200px;
+  border-top: 2px solid black;
+  margin-top: -200px; }
+
+/*# sourceMappingURL=main_revised.css.map */
