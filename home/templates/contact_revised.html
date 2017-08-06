@@ -1,2 +1,53 @@
 {% extends 'core/base_revised.html' %}
 {% load static %}
+
+{% block head_stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{% static "/core/css/main_revised.css" %}" />
+	<link rel="stylesheet" type="text/css" href="{% static "/home/css/contact_revised.css" %}" />
+{% endblock %}
+
+{% block default_content %}
+	<div class="contact-container">
+		<div id="location">
+			<h1>Find Us At</h1>
+			<p>1234 5th Street <br /> Pacific, MO 63000 <br /> (123) 456-7890</p>
+		</div> <!-- End of location -->
+		<div id="hours">
+			<h1>Business Hours</h1>
+			<table>
+				<tr>
+					<td>Monday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+				<tr>
+					<td>Sunday</td>
+					<td>9:00am - 5:00pm</td>
+				</tr>
+			</table>
+			<p id="holiday-clause"><i>*Note: Hours may vary according to holidays and severe weather.</i></p>
+		</div> <!-- End of hours -->
+		<div id="misc-contact-info">
+			<h1>We Hope to Hear From You Soon!</h1>
+		</div> <!-- End of contact-info -->
+	</div> <!-- End of contact-grid-container -->
+{% endblock %}

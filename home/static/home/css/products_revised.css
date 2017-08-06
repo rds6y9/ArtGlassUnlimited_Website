@@ -1,3 +1,55 @@
-
+.product-container {
+  width: 100%; }
+  .product-container #filter-zone {
+    padding: 20px 0px;
+    text-align: center; }
+    .product-container #filter-zone #glass-type-selector {
+      margin: 10px 0px;
+      padding: 5px 30%;
+      background-color: white; }
+  .product-container .glass-type-area {
+    display: none; }
+  .product-container .shown-selection {
+    display: block; }
+  .product-container #Stained {
+    background-color: red;
+    min-height: 200px; }
+  .product-container #Etched {
+    background-color: cyan;
+    min-height: 200px; }
+  .product-container #Faceted {
+    background-color: purple;
+    min-height: 200px; }
+  .product-container #contact-us-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    min-height: 100px; }
+  .product-container #contact-us-container > h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Times;
+    font-size: 36px;
+    color: black;
+    text-align: center; }
+  .product-container #contact-us-container > p {
+    padding-top: 10px;
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    line-height: 30px; }
+  .product-container #contact-us-container > p > a {
+    text-decoration: none;
+    color: black; }
+  .product-container .focus {
+    user-select: none;
+    padding: 10px;
+    margin-right: 5px;
+    font-weight: bold;
+    border: 1px solid #bbb; }
+  .product-container .focus:hover {
+    background-color: #aaa;
+    border: 1px solid black; }
 
 /*# sourceMappingURL=products_revised.css.map */

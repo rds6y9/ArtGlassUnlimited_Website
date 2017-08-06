@@ -1,0 +1,44 @@
+.contact-container {
+	width: 100%;
+
+	#location {
+		padding: 20px 0px;
+		text-align: center;
+
+		h1 {
+			font-family: Arial;
+			font-size: 36px;
+			padding: 25px 0px;
+		}
+	}
+
+	#hours {
+		text-align: center;
+
+		h1 {
+			font-family: Arial;
+			font-size: 36px;
+			padding: 20px 0px;
+		}
+
+		table {
+			margin: 0 auto;
+		}
+
+		#holiday-clause {
+			padding: 20px;
+		}
+	}
+
+	#misc-contact-info {
+		text-align: center;
+
+		h1 {
+			font-family: Arial;
+			font-size: 36px;
+			padding: 20px 0px;
+			line-height: 44px;
+		}
+	}
+}
+

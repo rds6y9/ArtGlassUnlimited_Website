@@ -1,3 +1,28 @@
-
+.contact-container {
+  width: 100%; }
+  .contact-container #location {
+    padding: 20px 0px;
+    text-align: center; }
+    .contact-container #location h1 {
+      font-family: Arial;
+      font-size: 36px;
+      padding: 25px 0px; }
+  .contact-container #hours {
+    text-align: center; }
+    .contact-container #hours h1 {
+      font-family: Arial;
+      font-size: 36px;
+      padding: 20px 0px; }
+    .contact-container #hours table {
+      margin: 0 auto; }
+    .contact-container #hours #holiday-clause {
+      padding: 20px; }
+  .contact-container #misc-contact-info {
+    text-align: center; }
+    .contact-container #misc-contact-info h1 {
+      font-family: Arial;
+      font-size: 36px;
+      padding: 20px 0px;
+      line-height: 44px; }
 
 /*# sourceMappingURL=contact_revised.css.map */

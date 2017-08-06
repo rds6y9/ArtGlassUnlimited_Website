@@ -7,3 +7,17 @@ function showAndHideMenu() {
         menu.style.display = "block";
     }
 }
+
+// NOTE TO SELF: Make the nav dropdown go away when clicking somewhere else.
+
+/* Anything that gets to the document
+   will hide the dropdown */
+// $(document).click(function(){
+//   $("#dropdown-nav-menu").hide();
+// });
+
+/* Clicks within the dropdown won't make
+   it past the dropdown itself */
+// $("#dropdown-nav-menu").click(function(e){
+//   e.stopPropagation();
+// });

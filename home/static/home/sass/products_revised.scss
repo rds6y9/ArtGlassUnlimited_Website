@@ -1,0 +1,80 @@
+.product-container {
+	width: 100%;
+
+	#filter-zone {
+		padding: 20px 0px;
+		text-align: center;
+
+		#glass-type-selector {
+			margin: 10px 0px;
+			padding: 5px 30%;
+			background-color: white;
+		}
+	}
+
+	.glass-type-area {
+		display: none;
+	}
+
+	.shown-selection {
+		display: block;
+	}
+
+	#Stained {
+		background-color: red;
+		min-height: 200px;
+	}
+
+	#Etched {
+		background-color: cyan;
+		min-height: 200px;
+	}
+
+	#Faceted {
+		background-color: purple;
+		min-height: 200px;
+	}
+
+	#contact-us-container {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	    width: 100%;
+	    min-height: 100px;
+	}
+	
+	#contact-us-container > h1 {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    font-family: Times;
+	    font-size: 36px;
+	    color: black;
+	    text-align: center;
+	}
+	
+	#contact-us-container > p {
+	    padding-top: 10px;
+	    font-family: Arial;
+	    font-size: 16px;
+	    color: black;
+	    text-align: center;
+	    line-height: 30px;
+	}
+	
+	#contact-us-container > p > a {
+	    text-decoration: none;
+	    color: black;
+	}
+
+	.focus {
+	    user-select: none;
+	    padding: 10px;
+	    margin-right: 5px;
+	    font-weight: bold;
+	    border: 1px solid #bbb;
+	}
+
+	.focus:hover {
+	    background-color: #aaa;
+	    border: 1px solid black;
+	}
+}

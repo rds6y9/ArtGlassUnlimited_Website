@@ -3,7 +3,7 @@
 -------------------------------------------- */
 
 $header-height: 70px;
-$footer-height: 200px;
+$footer-height: 170px;
 
 html {
 	min-width: 100%;
@@ -114,32 +114,71 @@ body {
 		width: 100%;
 		margin-top: $header-height;
 		margin-bottom: $footer-height;
-		background-color: #bbb;
 	}
 }
 
 .footer {
+	display: grid;
 	grid-area: "footer";
-	height: $footer-height;
+	grid-template: 
+		"ownership" "quick-links" ;
+	min-height: $footer-height;
 	border-top: 2px solid black;
 	margin-top: -$footer-height;
 	background-color: #ddd;
 
-	#ownership {
-		width: 100%;
+	#ownership-contact {
+		grid-area: "ownership";
 		height: $footer-height;
-		text-align: center;
+		text-align: left;
 		font-family: Arial;
+		padding-left: 20px;
 
 		#theirs {
-			font-size: 16px;
-			line-height: .5 * $footer-height;
+			font-size: 14px;
+			padding-top: .1 * $footer-height;
+			line-height: .1 * $footer-height;
+		}
+
+		#copyright-tag {
+			font-size: 14px;
+			padding-top: .1 * $footer-height;
+			line-height: .1 * $footer-height;
 		}
 
 		#mine {
 			color: #777;
 			font-size: 12px;
-			line-height: .5 * $footer-height;
+			padding-top: .15 * $footer-height;
+			line-height: .1 * $footer-height;
+		}
+	}
+
+	#quick-links {
+		grid-area: "quick-links";
+		text-align: left;
+		font-family: Arial;
+		padding-left: 20px;
+		padding-bottom: 10px;
+
+		ul {
+			list-style-type: none;
+			line-height: 26px;
+
+			li {
+				font-size: 12px;
+			}
+
+			li:first-child {
+				text-decoration: underline;
+				font-weight: bold;
+				font-size: 14px;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
 		}
 	}
 }
