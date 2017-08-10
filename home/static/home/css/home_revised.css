@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Damion;
+  src: url("../../../../core/static/core/font/damion-regular.ttf"); }
+h1 {
+  font-family: Damion, Arial !important;
+  font-size: 48px !important; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.home-grid-container {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template: "about" "products-link";
+  margin: 0 auto; }
+  .home-grid-container #about {
+    grid-area: "about";
+    padding-top: 25px;
+    text-align: center; }
+    .home-grid-container #about #about-title {
+      font-family: Arial;
+      font-size: 36px; }
+    .home-grid-container #about .about-body {
+      padding: 20px 10px;
+      font-family: Arial;
+      font-size: 16px;
+      line-height: 30px;
+      width: 90%;
+      text-align: justify;
+      margin: 0 auto; }
+  .home-grid-container #products-link {
+    width: 100%;
+    min-height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; }
+    .home-grid-container #products-link h1 {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 36px;
+      font-family: Times; }
+    .home-grid-container #products-link p {
+      padding-top: 10px;
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 30px; }
+    .home-grid-container #products-link p > a {
+      text-decoration: none;
+      color: black;
+      user-select: none; }
+    .home-grid-container #products-link .focus {
+      user-select: none;
+      padding: 10px;
+      margin-right: 5px;
+      font-weight: bold;
+      border: 1px solid #bbb; }
+    .home-grid-container #products-link .focus:hover {
+      background-color: #aaa;
+      border: 1px solid black; }
+
+.picture-spot {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  z-index: 0;
+  background-color: #777; }
+
+/*# sourceMappingURL=home_revised.css.map */

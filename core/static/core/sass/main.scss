@@ -13,10 +13,10 @@ $minimum-width: 370px;
 $header-collapse-breakpoint: 800px;
 $header-dropdown-breakpoint: $minimum-width;
 
-@font-face {
-	font-family: Damion;
-	src: url('../font/damion-regular.ttf');
-}
+// @font-face {
+// 	font-family: Damion;
+// 	src: url('../font/damion-regular.ttf');
+// }
 
 html {
 	min-width: 100%;
@@ -57,7 +57,7 @@ body {
 	#logo {
 		display: block;
 		text-decoration: none;
-		font-family: Damion;
+		font-family: Times;
 		font-size: 32px;
 		line-height: $header-height;
 		padding-left: 20px;

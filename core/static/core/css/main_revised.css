@@ -1,0 +1,187 @@
+/* --------------------------------------------
+:: Stylesheet for base_revised.html
+-------------------------------------------- */
+@font-face {
+  font-family: Damion;
+  src: url("../font/damion-regular.ttf"); }
+h1 {
+  font-family: Damion, Arial; }
+
+html {
+  min-width: 100%;
+  min-height: 100%; }
+
+body {
+  min-width: 100%;
+  min-height: 100%; }
+
+.grid-container {
+  display: grid;
+  display: -ms-grid;
+  grid-template: "header" "content-wrapper" "footer";
+  -ms-grid-template: "header" "content-wrapper" "footer";
+  width: 100%;
+  min-width: 100%;
+  height: 100%; }
+
+.header {
+  grid-area: "header";
+  -ms-grid-area: "header";
+  display: grid;
+  display: -ms-grid;
+  grid-template: "logo nav";
+  -ms-grid-template: "logo nav";
+  position: fixed;
+  width: 100%;
+  min-width: 100%;
+  height: 50px;
+  border-bottom: 2px solid black;
+  background-color: #ddd;
+  z-index: 9999; }
+  .header .logo {
+    grid-area: "logo";
+    -ms-grid-area: "logo";
+    min-width: 300px; }
+    .header .logo h1 {
+      font-family: Arial;
+      font-size: 26px !important;
+      text-align: center;
+      line-height: 50px; }
+  .header .nav {
+    grid-area: "nav";
+    -ms-grid-area: "nav";
+    min-width: 50px; }
+    .header .nav #dropdown-nav {
+      display: block;
+      height: 50px;
+      margin: 0 auto;
+      border: none;
+      background-color: inherit; }
+      .header .nav #dropdown-nav .burger-patty {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 6px 0; }
+      .header .nav #dropdown-nav .first-patty {
+        margin: 12px 0px 6px 0px; }
+    .header .nav #nav-well {
+      display: none;
+      width: 300px;
+      height: 50px;
+      float: right;
+      padding-right: 15%; }
+      .header .nav #nav-well ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+      .header .nav #nav-well li {
+        flex: 1; }
+        .header .nav #nav-well li a {
+          display: block;
+          text-align: center;
+          padding: 15px;
+          text-decoration: none;
+          font-family: Arial;
+          color: black; }
+        .header .nav #nav-well li #home-nav:hover {
+          background-color: rgba(79, 127, 255, 0.2);
+          border-bottom: 6px solid #4f7fff; }
+        .header .nav #nav-well li #products-nav:hover {
+          background-color: rgba(191, 0, 0, 0.2);
+          border-bottom: 6px solid #bf0000; }
+        .header .nav #nav-well li #contact-nav:hover {
+          background-color: rgba(204, 0, 255, 0.2);
+          border-bottom: 6px solid #CC00FF; }
+    .header .nav #dropdown-nav-menu {
+      display: none;
+      position: fixed;
+      top: 50px;
+      right: 0;
+      min-width: 100px;
+      border: 1px solid black;
+      background-color: white;
+      z-index: 10000; }
+      .header .nav #dropdown-nav-menu ul {
+        list-style-type: none; }
+        .header .nav #dropdown-nav-menu ul li {
+          text-align: center;
+          border-bottom: 1px solid black; }
+          .header .nav #dropdown-nav-menu ul li a {
+            display: block;
+            font-family: Arial;
+            text-decoration: none;
+            color: black;
+            padding: 10px 0px; }
+          .header .nav #dropdown-nav-menu ul li a:hover {
+            background-color: #AAAAAA; }
+
+.content-wrapper {
+  grid-area: "content-wrapper";
+  -ms-grid-area: "content-wrapper";
+  min-height: 100vh; }
+  .content-wrapper .content {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 170px; }
+
+.footer {
+  display: grid;
+  display: -ms-grid;
+  grid-area: "footer";
+  -ms-grid-area: "footer";
+  grid-template: "ownership" "quick-links";
+  -ms-grid-template: "ownership" "quick-links";
+  min-height: 170px;
+  border-top: 2px solid black;
+  margin-top: -170px;
+  background-color: #ddd;
+  z-index: 999; }
+  .footer #ownership-contact {
+    grid-area: "ownership";
+    -ms-grid-area: "ownership";
+    height: 170px;
+    text-align: left;
+    font-family: Arial;
+    padding-left: 20px; }
+    .footer #ownership-contact #theirs {
+      font-size: 14px;
+      padding-top: 17px;
+      line-height: 17px; }
+    .footer #ownership-contact #copyright-tag {
+      font-size: 14px;
+      padding-top: 17px;
+      line-height: 17px; }
+    .footer #ownership-contact #mine {
+      color: #777;
+      font-size: 12px;
+      padding-top: 25.5px;
+      line-height: 17px; }
+  .footer #quick-links {
+    grid-area: "quick-links";
+    -ms-grid-area: "quick-links";
+    text-align: left;
+    font-family: Arial;
+    padding-left: 20px;
+    padding-bottom: 10px; }
+    .footer #quick-links ul {
+      list-style-type: none;
+      line-height: 26px; }
+      .footer #quick-links ul li {
+        font-size: 12px; }
+      .footer #quick-links ul li:first-child {
+        text-decoration: underline;
+        font-weight: bold;
+        font-size: 14px; }
+      .footer #quick-links ul a {
+        text-decoration: none;
+        color: black; }
+
+@media (min-width: 700px) {
+  #dropdown-nav {
+    display: none !important; }
+
+  #nav-well {
+    display: block !important; } }
+
+/*# sourceMappingURL=main_revised.css.map */

@@ -28,7 +28,7 @@
   color: white; }
 
 #info-well > h1 {
-  font-family: Damion;
+  font-family: Times;
   font-size: 48px;
   padding-top: 50px;
   padding-bottom: 20px; }
@@ -47,7 +47,7 @@ td:first-child {
   padding-right: 10px; }
 
 #greeting {
-  font-family: Damion;
+  font-family: Times;
   font-size: 48px;
   color: black;
   text-align: center;

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang='en'>
+	<head>
+		{% block default_head %}
+			{% block head_charset %}
+				<meta charset="utf-8" />
+			{% endblock %}
+			
+			{% block head_title %}
+			{% endblock %}
+
+			{% block head_resetsheet %}
+				<link rel="stylesheet" type="text/css" href="{% static "/core/css/reset.css" %}" />
+			{% endblock %}
+
+			{% block head_stylesheets %}
+				<link rel="stylesheet" type="text/css" href="{% static "/core/css/main_revised.css" %}" />
+			{% endblock %}
+
+			{% block head_javascript %}
+				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script type="text/javascript" src="{% static "/core/js/navigation.js" %}"></script>
+			{% endblock %}
+
+			{% block head_meta %}
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			{% endblock %}
+		{% endblock %}
+	</head>
+	<body>
+		{% block default_body %}
+			<div class="grid-container">
+				<div class="header">
+					<div class="logo">
+						<h1>Art Glass Unlimited</h1>
+					</div> <!-- End of logo -->
+					<div class="nav">
+						<button id="dropdown-nav" onclick="showAndHideMenu()">
+							<div class="burger-patty first-patty"></div>
+							<div class="burger-patty"></div>
+							<div class="burger-patty"></div>
+						</button> <!-- End of dropdown-nav -->
+						<div id="nav-well">
+							<ul>
+								<li><a id="home-nav" href="{% url 'home' %}">Home</a></li>
+								<li><a id="products-nav" href="{% url 'products' %}">Products</a></li>
+								<li><a id="contact-nav" href="{% url 'contact' %}">Contact</a></li>
+							</ul>	
+						</div> <!-- End of nav-well -->
+						<div id="dropdown-nav-menu">
+							<ul>
+								<li><a href="{% url 'home' %}">Home</a></li>
+								<li><a href="{% url 'products' %}">Products</a></li>
+								<li><a href="{% url 'contact' %}">Contact</a></li>
+							</ul>	
+						</div> <!-- End of dropdown-nav-menu -->
+					</div> <!-- End of nav -->
+				</div> <!-- End of header -->
+				<div class="content-wrapper">
+					<div class="content">
+						{% block default_content %}
+
+					 	{% endblock %}
+					</div> <!-- End of content -->
+				</div> <!-- End of content-wrapper -->
+				<div class="footer">
+					<div id="ownership-contact">
+						<p id="theirs">Art Glass Unlimited is owned by Gerald Mowery <br /> and Located in Pacific, MO</p>
+						<p id="copyright-tag">@ 2017 Art Glass Unlimited.</p>
+						<p id="mine">Website Created by Ryan Stoughton</p>
+					</div> <!-- End of ownership -->
+					<div id="quick-links">
+						<ul>
+							<li>Quick Links</li>
+							<li><a href="{% url 'home' %}">Home</a></li>
+							<li><a href="{% url 'products' %}">Products</a></li>
+							<li><a href="{% url 'contact' %}">Contact</a></li>
+						</ul>
+					</div> <!-- End of quick-links -->
+				</div> <!-- End of footer -->
+			</div>
+		{% endblock %}
+	</body>
+</html>

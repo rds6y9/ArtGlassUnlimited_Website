@@ -10,10 +10,10 @@ $minimum-width: 370px;
 $header-collapse-breakpoint: 800px;
 $header-dropdown-breakpoint: $minimum-width;
 
-@font-face {
-	font-family: Damion;
-	src: url('../../../../core/static/core/font/damion-regular.ttf');
-}
+// @font-face {
+// 	font-family: Damion;
+// 	src: url('../../../../core/static/core/font/damion-regular.ttf');
+// }
 
 .onpage {
     background-color: rgba($home-color, 0.2);
@@ -116,7 +116,7 @@ $header-dropdown-breakpoint: $minimum-width;
 #about-title {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-family: Damion;
+    font-family: Times;
     font-size: 48px;
     text-align: center;
     color: white;
@@ -142,7 +142,7 @@ $header-dropdown-breakpoint: $minimum-width;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 48px;
-    font-family: Damion;
+    font-family: Times;
 }
 
 #product-container > p {

@@ -1,7 +1,4 @@
 /* CSS for home/products.html */
-@font-face {
-  font-family: Damion;
-  src: url("../../../../core/static/core/font/damion-regular.ttf"); }
 .onpage {
   background-color: rgba(191, 0, 0, 0.2);
   border-bottom: 6px solid #bf0000; }
@@ -12,7 +9,7 @@
   text-align: center; }
 
 #filter-zone > h1 {
-  font-family: Damion;
+  font-family: Times;
   font-size: 48px;
   color: black;
   margin-top: 20px; }
@@ -73,7 +70,7 @@
 #contact-us-container > h1 {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: Damion;
+  font-family: Times;
   font-size: 48px;
   color: black;
   text-align: center; }
