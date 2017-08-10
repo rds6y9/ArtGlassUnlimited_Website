@@ -1,3 +1,18 @@
+$max-mobile-width: 700px;
+$glass-type-header-size: 36px;
+$glass-type-paragraph-size: 16px;
+$glass-type-paragraph-line-height: 30px;
+
+@font-face {
+	font-family: Damion;
+	src: url('../../../../core/static/core/font/damion-regular.ttf');
+}
+
+h1 {
+	font-family: Damion, Arial !important;
+	font-size: 48px !important;
+}
+
 .product-container {
 	width: 100%;
 
@@ -20,19 +35,146 @@
 		display: block;
 	}
 
+	.type-wrapper {
+		padding: 20px 0px;
+	}
+
+	#glass-type-areas-wrapper {
+		width: 100%;
+		background-color: black;
+	}
+
 	#Stained {
-		background-color: red;
-		min-height: 200px;
+
+		#stained-wrapper {
+			max-width: $max-mobile-width;
+			min-height: 400px;
+			margin: 0 auto;
+			// background-color: #555;
+			color: white;
+			font-family: Arial;
+			text-align: center;
+
+			h1 {
+				font-size: $glass-type-header-size;
+				padding-bottom: 20px;
+			}
+
+			p {
+				text-align: justify;
+				font-size: $glass-type-paragraph-size;
+				line-height: $glass-type-paragraph-line-height;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-bottom: 40px;
+				margin: 0 auto;
+			}
+
+			#stained-carousel {
+				position: relative;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-top: 50.625%;
+				margin: 0 auto;
+				background-color: grey;
+				z-index: 0;
+			}
+		}
 	}
 
 	#Etched {
-		background-color: cyan;
-		min-height: 200px;
+		
+		#etched-wrapper {
+			max-width: $max-mobile-width;
+			min-height: 400px;
+			margin: 0 auto;
+			// background-color: #555;
+			color: white;
+			font-family: Arial;
+			text-align: center;
+
+			h1 {
+				font-size: $glass-type-header-size;
+				padding-bottom: 20px;
+			}
+
+			p {
+				text-align: justify;
+				font-size: $glass-type-paragraph-size;
+				line-height: $glass-type-paragraph-line-height;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-bottom: 40px;
+				margin: 0 auto;
+			}
+
+			#etched-carousel {
+				position: relative;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-top: 50.625%;
+				margin: 0 auto;
+				background-color: green;
+				z-index: 0;
+			}
+		}
 	}
 
 	#Faceted {
-		background-color: purple;
-		min-height: 200px;
+
+		#faceted-wrapper {
+			max-width: $max-mobile-width;
+			min-height: 400px;
+			margin: 0 auto;
+			// background-color: #555;
+			color: white;
+			font-family: Arial;
+			text-align: center;
+
+			h1 {
+				font-size: $glass-type-header-size;
+				padding-bottom: 20px;
+			}
+
+			p {
+				text-align: justify;
+				font-size: $glass-type-paragraph-size;
+				line-height: $glass-type-paragraph-line-height;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-bottom: 40px;
+				margin: 0 auto;
+			}
+
+			#faceted-carousel {
+				position: relative;
+				width: 90%;
+				max-width: $max-mobile-width;
+				padding-top: 50.625%;
+				margin: 0 auto;
+				background-color: red;
+				z-index: 0;
+			}
+		}
+	}
+
+	#repair {
+		font-family: Arial;
+		text-align: center;
+		padding: 20px 0px;
+
+		h1 {
+			padding-bottom: 20px;
+		}
+
+		p {
+			text-align: justify;
+			font-size: 16px;
+			width: 90%;
+			max-width: $max-mobile-width;
+			margin: 0 auto;
+			line-height: 30px;
+		}
 	}
 
 	#contact-us-container {

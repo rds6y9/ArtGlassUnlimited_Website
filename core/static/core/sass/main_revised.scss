@@ -2,8 +2,20 @@
 :: Stylesheet for base_revised.html
 -------------------------------------------- */
 
-$header-height: 70px;
+$header-height: 50px;
 $footer-height: 170px;
+$home-color: #4f7fff;
+$products-color: #bf0000;
+$contact-color: #CC00FF;
+
+@font-face {
+	font-family: Damion;
+	src: url('../font/damion-regular.ttf');
+}
+
+h1 {
+	font-family: Damion, Arial;
+}
 
 html {
 	min-width: 100%;
@@ -17,7 +29,12 @@ body {
 
 .grid-container {
 	display: grid;
+	display: -ms-grid;
 	grid-template:
+		"header"
+		"content-wrapper"
+		"footer";
+	-ms-grid-template:
 		"header"
 		"content-wrapper"
 		"footer";
@@ -28,22 +45,27 @@ body {
 
 .header {
 	grid-area: "header";
+	-ms-grid-area: "header";
 	display: grid;
+	display: -ms-grid;
 	grid-template: "logo nav";
+	-ms-grid-template: "logo nav";
 	position: fixed;
 	width: 100%;
 	min-width: 100%;
 	height: $header-height;
 	border-bottom: 2px solid black;
 	background-color: #ddd;
+	z-index: 9999;
 
 	.logo {
 		grid-area: "logo";
+		-ms-grid-area: "logo";
 		min-width: 300px;
 
 		h1 {
 			font-family: Arial;
-			font-size: 26px;
+			font-size: 26px !important;
 			text-align: center;
 			line-height: $header-height;
 		}
@@ -51,6 +73,7 @@ body {
 
 	.nav {
 		grid-area: "nav";
+		-ms-grid-area: "nav";
 		min-width: 50px;
 
 		#dropdown-nav {
@@ -72,6 +95,49 @@ body {
 			}
 		}
 
+		#nav-well {
+			display: none;
+			width: 300px;
+			height: $header-height;
+			float: right;
+			padding-right: 15%;
+		
+			ul {
+				display: flex;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+		
+			li {
+				flex: 1;
+		
+				a {
+					display: block;
+		   			text-align: center;
+		    		padding: ($header-height / 2 - 10);
+		    		text-decoration: none;
+					font-family: Arial;
+					color: black;
+				}
+		
+				#home-nav:hover {
+					background-color: rgba($home-color, 0.2);
+					border-bottom: 6px solid $home-color;
+				}
+		
+				#products-nav:hover {
+					background-color: rgba($products-color, 0.2);
+					border-bottom: 6px solid $products-color;
+				}
+		
+				#contact-nav:hover {
+					background-color: rgba($contact-color, 0.2);
+					border-bottom: 6px solid $contact-color;
+				}
+			}
+		}
+	
 		#dropdown-nav-menu {
 			display: none;
 			position: fixed;
@@ -80,6 +146,7 @@ body {
 			min-width: 100px;
 			border: 1px solid black;
 			background-color: white;
+			z-index: 10000;
 
 			ul {
 				list-style-type: none;	
@@ -108,6 +175,7 @@ body {
 
 .content-wrapper {
 	grid-area: "content-wrapper";
+	-ms-grid-area: "content-wrapper";
 	min-height: 100vh;
 
 	.content {
@@ -119,16 +187,22 @@ body {
 
 .footer {
 	display: grid;
+	display: -ms-grid;
 	grid-area: "footer";
+	-ms-grid-area: "footer";
 	grid-template: 
+		"ownership" "quick-links" ;
+	-ms-grid-template: 
 		"ownership" "quick-links" ;
 	min-height: $footer-height;
 	border-top: 2px solid black;
 	margin-top: -$footer-height;
 	background-color: #ddd;
+	z-index: 999;
 
 	#ownership-contact {
 		grid-area: "ownership";
+		-ms-grid-area: "ownership";
 		height: $footer-height;
 		text-align: left;
 		font-family: Arial;
@@ -156,6 +230,7 @@ body {
 
 	#quick-links {
 		grid-area: "quick-links";
+		-ms-grid-area: "quick-links";
 		text-align: left;
 		font-family: Arial;
 		padding-left: 20px;
@@ -180,5 +255,15 @@ body {
 				color: black;
 			}
 		}
+	}
+}
+
+@media (min-width: 700px) {
+	#dropdown-nav {
+		display: none !important;
+	}
+
+	#nav-well {
+		display: block !important;
 	}
 }

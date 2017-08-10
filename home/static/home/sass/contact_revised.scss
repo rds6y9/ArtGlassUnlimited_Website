@@ -1,13 +1,24 @@
+@font-face {
+	font-family: Damion;
+	src: url('../../../../core/static/core/font/damion-regular.ttf');
+}
+
+h1 {
+	font-family: Damion, Arial !important;
+	font-size: 48px !important;
+}
+
 .contact-container {
 	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 
 	#location {
 		padding: 20px 0px;
 		text-align: center;
+		line-height: 26px;
 
 		h1 {
-			font-family: Arial;
-			font-size: 36px;
 			padding: 25px 0px;
 		}
 	}
@@ -16,13 +27,17 @@
 		text-align: center;
 
 		h1 {
-			font-family: Arial;
-			font-size: 36px;
 			padding: 20px 0px;
 		}
 
 		table {
 			margin: 0 auto;
+			line-height: 26px;
+
+			tr > td:first-child {
+				text-align: left;
+				padding-right: 20px;
+			}
 		}
 
 		#holiday-clause {
@@ -34,11 +49,25 @@
 		text-align: center;
 
 		h1 {
-			font-family: Arial;
-			font-size: 36px;
 			padding: 20px 0px;
 			line-height: 44px;
 		}
 	}
 }
 
+.picture-spot {
+	position: relative;
+	width: 90%;
+	padding-bottom: 50.625%;
+	margin: 0 auto;
+	z-index: 0;
+	background-color: #ccc;
+}
+
+// Needed to push footer down.
+
+#picture-holder {
+	width: 90%;
+	height: 490px;
+	margin: 0 auto;
+}

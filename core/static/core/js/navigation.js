@@ -1,3 +1,12 @@
+var menu = document.getElementById("dropdown-nav-menu");
+var dropdown_breakpoint = 700;
+
+window.onresize = function(event) {
+	if($(window).width() >= dropdown_breakpoint) {
+		menu.style.display = "none";
+	}
+};
+
 function showAndHideMenu() {
 	menu = document.getElementById("dropdown-nav-menu");
     if(menu.style.display == "block") {
