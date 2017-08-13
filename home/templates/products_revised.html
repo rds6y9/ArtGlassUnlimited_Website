@@ -11,7 +11,7 @@
 	<div class="product-container">
 		<div id="filter-zone">
 			<p><b>Select a type of glass to learn more</b></p>
-			<select id="glass-type-selector" onchange="switchView()" autofocus>
+			<select id="glass-type-selector" onchange="switchView(); resetIndex();" autofocus>
 				<option value="Stained">Stained</option>
 				<option value="Etched">Etched</option>
 				<option value="Faceted">Faceted</option>
@@ -25,7 +25,20 @@
 				The glass itself has been around for a very long time, and the art style is 
 				one that adds great class to any window both residential and commercial.
 				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
-				<div id="stained-carousel" class="product-carousel">Picture Area</div>
+				<div id="stained-carousel" class="product-carousel">
+					{% for stained_slide in stained_slides %}
+						<img src="{{ stained_slide.image.url }}" class="stained-slides" />
+					{% endfor %}
+					{% if stained_slides %}
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="counter">
+  							<p class="numerator" id="stained-numerator">1</p>
+  							/
+  							<p class="denominator">{{ stained_slides.count }}</p>
+  						</div>
+  					{% endif %}
+				</div>
 			</div> <!-- End of stained-wrapper -->
 		</div> <!-- End of Stained -->
 		<div id="Etched" class="glass-type-area">
@@ -35,7 +48,20 @@
 				The glass itself has been around for a very long time, and the art style is 
 				one that adds great class to any window both residential and commercial.
 				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
-				<div id="etched-carousel" class="product-carousel">Picture Area</div>
+				<div id="etched-carousel" class="product-carousel">
+					{% for etched_slide in etched_slides %}
+						<img src="{{ etched_slide.image.url }}" class="etched-slides" />
+					{% endfor %}
+					{% if etched_slides %}
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="counter" id="etched-numerator">
+  							<p class="numerator">1</p>
+  							/
+  							<p class="denominator">{{ etched_slides.count }}</p>
+  						</div>
+  					{% endif %}
+				</div>
 			</div> <!-- End of etched-wrapper -->
 		</div> <!-- End of Etched -->
 		<div id="Faceted" class="glass-type-area">
@@ -45,7 +71,20 @@
 				The glass itself has been around for a very long time, and the art style is 
 				one that adds great class to any window both residential and commercial.
 				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
-				<div id="faceted-carousel" class="product-carousel">Picture Area</div>
+				<div id="faceted-carousel" class="product-carousel">
+					{% for faceted_slide in faceted_slides %}
+						<img src="{{ faceted_slide.image.url }}" class="faceted-slides" />
+					{% endfor %}
+					{% if faceted_slides %}
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="counter">
+  							<p class="numerator" id="faceted-numerator">1</p>
+  							/
+  							<p class="denominator">{{ faceted_slides.count }}</p>
+  						</div>
+  					{% endif %}
+				</div>
 			</div> <!-- End of faceted-wrapper -->
 		</div> <!-- End of Faceted -->
 		</div> <!-- End of glass-type-areas-wrapper -->
@@ -70,5 +109,5 @@
 		</div>
 	</div> <!-- End of product-container -->
 	<script type="text/javascript" src="{% static "/home/js/products/selector.js" %}"></script>
-	<script type="text/javascript" src="{% static "/home/js/products/resize.js" %}"></script>
+	<script type="text/javascript" src="{% static "/home/js/products/carousel.js" %}"></script>
 {% endblock %}

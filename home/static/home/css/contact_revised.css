@@ -8,42 +8,28 @@ h1 {
 .contact-container {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto; }
-  .contact-container #location {
-    padding: 20px 0px;
-    text-align: center;
-    line-height: 26px; }
-    .contact-container #location h1 {
-      padding: 25px 0px; }
-  .contact-container #hours {
-    text-align: center; }
-    .contact-container #hours h1 {
-      padding: 20px 0px; }
-    .contact-container #hours table {
-      margin: 0 auto;
-      line-height: 26px; }
-      .contact-container #hours table tr > td:first-child {
-        text-align: left;
-        padding-right: 20px; }
-    .contact-container #hours #holiday-clause {
-      padding: 20px; }
-  .contact-container #misc-contact-info {
-    text-align: center; }
-    .contact-container #misc-contact-info h1 {
-      padding: 20px 0px;
-      line-height: 44px; }
-
-.picture-spot {
-  position: relative;
-  width: 90%;
-  padding-bottom: 50.625%;
+  padding-bottom: 30px;
   margin: 0 auto;
-  z-index: 0;
-  background-color: #ccc; }
-
-#picture-holder {
-  width: 90%;
-  height: 490px;
-  margin: 0 auto; }
+  text-align: center; }
+  .contact-container h1 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px; }
+  .contact-container :not(h1) {
+    font-family: Arial;
+    font-size: 16px; }
+  .contact-container #location {
+    line-height: 26px; }
+  .contact-container table {
+    margin: 0 auto;
+    line-height: 26px; }
+    .contact-container table tr > td:first-child {
+      text-align: left;
+      padding-right: 20px; }
+  .contact-container #holiday-clause {
+    padding-top: 20px; }
+  .contact-container img {
+    max-width: 90%;
+    max-height: 100%; }
 
 /*# sourceMappingURL=contact_revised.css.map */

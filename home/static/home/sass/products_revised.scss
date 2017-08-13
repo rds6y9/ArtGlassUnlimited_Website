@@ -1,4 +1,4 @@
-$max-mobile-width: 700px;
+$max-mobile-width: 1000px;
 $glass-type-header-size: 36px;
 $glass-type-paragraph-size: 16px;
 $glass-type-paragraph-line-height: 30px;
@@ -11,6 +11,12 @@ $glass-type-paragraph-line-height: 30px;
 h1 {
 	font-family: Damion, Arial !important;
 	font-size: 48px !important;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
 }
 
 .product-container {
@@ -48,7 +54,7 @@ h1 {
 
 		#stained-wrapper {
 			max-width: $max-mobile-width;
-			min-height: 400px;
+			// min-height: 400px;
 			margin: 0 auto;
 			// background-color: #555;
 			color: white;
@@ -74,10 +80,16 @@ h1 {
 				position: relative;
 				width: 90%;
 				max-width: $max-mobile-width;
-				padding-top: 50.625%;
 				margin: 0 auto;
-				background-color: grey;
 				z-index: 0;
+
+				.stained-slides {
+					display: none;
+				}
+
+				.shown-slide {
+					display: block;
+				}
 			}
 		}
 	}
@@ -86,7 +98,7 @@ h1 {
 		
 		#etched-wrapper {
 			max-width: $max-mobile-width;
-			min-height: 400px;
+			// min-height: 400px;
 			margin: 0 auto;
 			// background-color: #555;
 			color: white;
@@ -112,10 +124,16 @@ h1 {
 				position: relative;
 				width: 90%;
 				max-width: $max-mobile-width;
-				padding-top: 50.625%;
 				margin: 0 auto;
-				background-color: green;
 				z-index: 0;
+
+				.etched-slides {
+					display: none;
+				}
+
+				.shown-slide {
+					display: block;
+				}
 			}
 		}
 	}
@@ -124,7 +142,7 @@ h1 {
 
 		#faceted-wrapper {
 			max-width: $max-mobile-width;
-			min-height: 400px;
+			// min-height: 400px;
 			margin: 0 auto;
 			// background-color: #555;
 			color: white;
@@ -150,10 +168,16 @@ h1 {
 				position: relative;
 				width: 90%;
 				max-width: $max-mobile-width;
-				padding-top: 50.625%;
 				margin: 0 auto;
-				background-color: red;
 				z-index: 0;
+
+				.faceted-slides {
+					display: none;
+				}
+
+				.shown-slide {
+					display: block;
+				}
 			}
 		}
 	}
@@ -218,5 +242,42 @@ h1 {
 	.focus:hover {
 	    background-color: #aaa;
 	    border: 1px solid black;
+	}
+
+	.prev, .next {
+	    cursor: pointer;
+	    position: absolute;
+	    top: 47%;
+	    padding: 10px;
+	    font-size: 18px;
+	    color: white;
+	    font-weight: bold;
+	    user-select: none;
+	}
+	
+	.prev:hover, .next:hover {
+	    background-color: rgba(0,0,0,0.5);
+	}
+	
+	.prev {
+	    left: 0;
+	}
+	
+	.next {
+	    right: 0;
+	}
+
+	.counter {
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+   		transform: translateX(-50%);
+		padding: 6px 20px;
+		background-color: rgba(0,0,0,0.5);
+
+		* {
+			display: inline;
+		}
 	}
 }
