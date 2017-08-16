@@ -37,62 +37,8 @@
 	</head>
 
 	<body>
-		<div id="page-wrapper">
-		{% block page_header %}
-			<div id="header">
-				<div id="logo-well">
-					<a href="{% url 'home' %}" id="logo">Art Glass Unlimited</a>	
-				</div> <!-- End of logo-well -->
-				<div id="nav-well">
-					<ul>
-						<li><a id="home-nav" href="{% url 'home' %}">Home</a></li>
-						<li><a id="products-nav" href="{% url 'products' %}">Products</a></li>
-						<li><a id="contact-nav" href="{% url 'contact' %}">Contact</a></li>
-					</ul>	
-				</div> <!-- End of nav-well -->
-				<button id="dropdown-nav" onclick="showAndHideMenu()">
-					<div class="burger-patty first-patty"></div>
-					<div class="burger-patty"></div>
-					<div class="burger-patty"></div>
-				</button> <!-- End of dropdown-nav -->
-			</div> <!-- End of header -->
-			<div id="dropdown-nav-menu">
-				<ul>
-					<li><a href="{% url 'home' %}">Home</a></li>
-					<li><a href="{% url 'products' %}">Products</a></li>
-					<li><a href="{% url 'contact' %}">Contact</a></li>
-				</ul>	
-			</div> <!-- End of dropdown-nav-menu -->
-			<div id="extended-nav">
-				<ul>
-					<li><a href="{% url 'home' %}">Home</a></li>
-					<li><a href="{% url 'products' %}">Products</a></li>
-					<li><a href="{% url 'contact' %}">Contact</a></li>
-				</ul>
-			</div> <!-- End of extended-nav -->
+		{% block default_content %}
 		{% endblock %}
-
-			<div id="content-wrapper">
-				<div id="content">
-				{% block body_content %}
-				{% endblock %}
-				</div> <!-- End of content -->
-			</div> <!-- End of content-wrapper -->
-
-		{% block page_footer %}
-			<div id="footer">
-				<div id="property-well">
-					<p id="agu">Located in Pacific, MO | Owned by Gerald Mowery</p>
-					<p id="mine">Website created by Ryan Stoughton</p>
-				</div>
-
-				<div id="around-the-web-well">
-					<p>Catch Art Glass Unlimited Around the Web!</p>
-				</div> <!-- End of around-the-web-well -->
-			</div> <!-- End of footer -->
-		{% endblock %}
-
-		</div> <!-- End of page-wrapper -->
 	</body>	
 
 </html>

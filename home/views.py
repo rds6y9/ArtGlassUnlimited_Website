@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import HomeImage, HomeParagraph, ProductSlide, ContactImage
+from .models import HomeImage, HomeParagraph, ProductDescription, ProductSlide, ContactImage
 
 def home_page(request):
 
@@ -16,10 +16,17 @@ def products_page(request):
 	etched_slides = ProductSlide.objects.filter(category='ETCHED').order_by('order')
 	faceted_slides = ProductSlide.objects.filter(category='FACETED').order_by('order')
 
+	stained_desc = ProductDescription.objects.filter(category='STAINED').first()
+	etched_desc = ProductDescription.objects.filter(category='ETCHED').first()
+	faceted_desc = ProductDescription.objects.filter(category='FACETED').first()
+
 	return render(request, 'products_revised.html', {
 		'stained_slides': stained_slides,
 		'etched_slides': etched_slides,
-		'faceted_slides': faceted_slides,})
+		'faceted_slides': faceted_slides,
+		'stained_desc': stained_desc,
+		'etched_desc': etched_desc,
+		'faceted_desc': faceted_desc,})
 
 def contact_page(request):
 

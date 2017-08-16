@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import HomeImage, HomeParagraph, ProductSlide, ContactImage
+import home.models
 
-admin.site.register(HomeImage)
-admin.site.register(HomeParagraph)
-admin.site.register(ProductSlide)
-admin.site.register(ContactImage)
+admin.site.register(home.models.HomeImage)
+admin.site.register(home.models.HomeParagraph)
+admin.site.register(home.models.ProductDescription)
+admin.site.register(home.models.ProductSlide)
+admin.site.register(home.models.ContactImage)
