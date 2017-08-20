@@ -2,12 +2,9 @@
 :: Stylesheet for base_revised.html
 -------------------------------------------- */
 
-@import "palette";
+@import "variables";
 $header-height: 50px;
 $footer-height: 170px;
-$home-color: #4f7fff;
-$products-color: #bf0000;
-$contact-color: #CC00FF;
 
 @font-face {
 	font-family: Damion;

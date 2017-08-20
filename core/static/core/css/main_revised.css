@@ -36,7 +36,7 @@ body {
   min-width: 100%;
   height: 50px;
   border-bottom: 1px solid #464f51;
-  background-color: white;
+  background-color: #f3f3f3;
   z-index: 9999; }
   .header .logo {
     grid-area: "logo";
@@ -60,7 +60,7 @@ body {
       .header .nav #dropdown-nav .burger-patty {
         width: 30px;
         height: 4px;
-        background-color: #1c2321;
+        background-color: #0a0a0a;
         margin: 6px 0; }
       .header .nav #dropdown-nav .first-patty {
         margin: 12px 0px 6px 0px; }
@@ -83,7 +83,7 @@ body {
           padding: 15px;
           text-decoration: none;
           font-family: Arial;
-          color: #1c2321; }
+          color: #0a0a0a; }
         .header .nav #nav-well li #home-nav:hover {
           background-color: rgba(60, 145, 230, 0.2);
           border-bottom: 6px solid #3c91e6; }
@@ -99,19 +99,19 @@ body {
       top: 50px;
       right: 0;
       min-width: 100px;
-      border: 1px solid #1c2321;
+      border: 1px solid #0a0a0a;
       background-color: white;
       z-index: 10000; }
       .header .nav #dropdown-nav-menu ul {
         list-style-type: none; }
         .header .nav #dropdown-nav-menu ul li {
           text-align: center;
-          border-bottom: 1px solid #1c2321; }
+          border-bottom: 1px solid #0a0a0a; }
           .header .nav #dropdown-nav-menu ul li a {
             display: block;
             font-family: Arial;
             text-decoration: none;
-            color: #1c2321;
+            color: #0a0a0a;
             padding: 10px 0px; }
           .header .nav #dropdown-nav-menu ul li a:hover {
             background-color: #464f51;
@@ -136,7 +136,7 @@ body {
   min-height: 170px;
   border-top: 1px solid #464f51;
   margin-top: -170px;
-  background-color: white;
+  background-color: #f3f3f3;
   z-index: 999; }
   .footer #ownership-contact {
     grid-area: "ownership";
@@ -176,7 +176,7 @@ body {
         font-size: 14px; }
       .footer #quick-links ul a {
         text-decoration: none;
-        color: #1c2321; }
+        color: #0a0a0a; }
 
 @media (min-width: 700px) {
   #dropdown-nav {

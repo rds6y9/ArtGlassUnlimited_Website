@@ -25,7 +25,6 @@
 
 			{% block head_javascript %}
 				<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-				<script type="text/javascript" src="{% static "/core/js/navigation.js" %}"></script>
 			{% endblock %}
 
 			{% block head_meta %}
@@ -37,8 +36,57 @@
 	</head>
 
 	<body>
-		{% block default_content %}
-		{% endblock %}
+		
+		<header>
+			<div id="header-container">
+				<div id="logo">
+					<h1>Art Glass Unlimited</h1>
+				</div> <!-- End of logo -->
+				<button id="dropdown-nav" onclick="showAndHideMenu()">
+					<div class="burger-patty first-patty"></div>
+					<div class="burger-patty"></div>
+					<div class="burger-patty"></div>
+				</button> <!-- End of dropdown-nav -->
+				<div id="full-nav">
+					<ul>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'products' %}">Products</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div> <!-- End of full-nav -->
+				<div id="dropdown-nav-menu">
+					<ul>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'products' %}">Products</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>	
+				</div> <!-- End of dropdown-nav-menu -->
+			</div> <!-- End of header-container -->
+			
+		</header>
+		<div id="main-container">
+			<div id="content">
+			
+			{% block default_content %}
+			{% endblock %}
+
+			</div>  <!-- End of content -->
+			<footer>
+				<div id="ownership">
+					<p id="theirs">Owned by Gerald Mowery - Located in Pacific, MO</p>
+					<p id="mine">Website Created by Ryan Stoughton @ 2017</p>
+				</div> <!-- End of ownership -->
+				<div id="links">
+					<ul>
+						<li>Navigation</li>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'products' %}">Products</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</div>
+			</footer>
+		</div> <!-- End of main-container -->
+		<script type="text/javascript" src="{% static "/core/js/navigation.js" %}"></script>
 	</body>	
 
 </html>

@@ -3,12 +3,14 @@ from .models import HomeImage, HomeParagraph, ProductDescription, ProductSlide, 
 
 def home_page(request):
 
-	home_images = HomeImage.objects.order_by('order')
-	paragraphs = HomeParagraph.objects.order_by('order')
+	# home_images = HomeImage.objects.order_by('order')
+	# paragraphs = HomeParagraph.objects.order_by('order')
 
-	return render(request, 'home_revised.html', {
-		'home_images': home_images,
-		'paragraphs': paragraphs,})
+	# return render(request, 'home_revised.html', {
+	# 	'home_images': home_images,
+	# 	'paragraphs': paragraphs,})
+
+	return render(request, 'home.html')
 
 def products_page(request):
 

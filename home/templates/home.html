@@ -1,7 +1,80 @@
 {% extends 'core/base.html' %}
 {% load static %}
 
+{% block head_stylesheets %}
+	<link rel="stylesheet" type="text/css" href="{% static "/core/css/main.css" %}" />
+	<link rel="stylesheet" type="text/css" href="{% static "/home/css/home.css" %}" />
+{% endblock %}
 
 {% block default_content %}
-Home Page.
+
+<!--======================== HERO STUFF =========================-->
+<div id="top-hero">
+	<img class="hero-slides" src="{% static 'home/img/home/21_9image.jpg' %}" />
+	<img class="hero-slides" src="{% static 'home/img/home/wideimage.jpg' %}" />
+	<div id="top-hero-caption-over">
+		<h1>Commited to Quality Glass Products Since 1900</h1>
+		<p><a href="{% url 'products' %}"><span class="clickable">Check Them Out!</span></a></p>
+	</div> <!-- End of top-hero-caption-over -->
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  	<div class="counter">
+  		<p id="top-hero-numerator">1</p>
+  							/
+  		<p id="top-hero-denominator">2<p>
+  	</div>
+</div> <!-- End of top-hero -->
+<div id="top-hero-caption-under">
+	<h1>Commited to Quality Glass Products Since 1900</h1>
+	<p><a href="{% url 'products' %}"><span class="clickable">Check Them Out!</span></a></p>
+</div> <!-- End of top-hero-caption-under -->
+<!--===================== END OF HERO STUFF =====================-->
+
+<!--========================== BADGES ===========================-->
+<div id="badges-container">
+	<h1>Why Choose Art Glass Unlimited?</h1>
+<div id="badges">
+	<div class="badge-container">
+		<img id="image" src="{% static 'home/img/home/salesman.png' %}" />
+		<div class="separator"></div>
+		<p id="description">
+			Friendly and knowledgable professionals dedicated to making your experience great!
+		</p>
+	</div>
+	<div class="badge-container">
+		<img id="image" src="{% static 'home/img/home/puzzle.png' %}" />
+		<div class="separator"></div>
+		<p id="description">
+			The highest quality glass to fill the missing piece in any environment.
+		</p>
+	</div>
+	<div class="badge-container">
+		<img id="image" src="{% static 'home/img/home/clock.png' %}" />
+		<div class="separator"></div>
+		<p id="description">
+			Quality projects completed in a timely manner.
+		</p>
+	</div>
+	<div class="badge-container">
+		<img id="image" src="{% static 'home/img/home/savings.png' %}" />
+		<div class="separator"></div>
+		<p id="description">
+			Products to top off any environment at an affordable price!
+		</p>
+	</div>
+</div>
+</div>
+<!--======================= END OF BADGES =======================-->
+
+<!--======================= PRODUCTS LINK =======================-->
+<div id="products-link">
+	<h1>Check Out Our Products</h1>
+	<p><a href="{% url 'products' %}"><span class="clickable">Browse Our Selection</span></a> of the highest quality glass in the region!</p>
+</div>
+<!--==================== END OF PRODUCTS LINK ===================-->
+
+<!--========================== SCRIPTS ==========================-->
+<script type="text/javascript" src="{% static "/home/js/home/resize.js" %}"></script>
+<script type="text/javascript" src="{% static "/home/js/home/carousel.js" %}"></script>
+<!--====================== END OF SCRIPTS =======================-->
 {% endblock %}
