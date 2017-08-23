@@ -1,0 +1,31 @@
+.contact-container {
+  width: 100%; }
+  .contact-container #location {
+    width: 100%; }
+    .contact-container #location h1 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: 20px 0px; }
+    .contact-container #location #google-map {
+      width: 100%;
+      height: 400px;
+      background: #464f51; }
+    .contact-container #location p {
+      line-height: 2em;
+      text-align: center;
+      padding: 20px 0px; }
+  .contact-container #availability h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 0px; }
+  .contact-container #availability table {
+    margin: 0 auto;
+    line-height: 26px; }
+    .contact-container #availability table tr > td:first-child {
+      text-align: left;
+      padding-right: 50px; }
+  .contact-container #availability #holiday-clause {
+    padding-top: 20px;
+    text-align: center; }
+
+/*# sourceMappingURL=contact.css.map */

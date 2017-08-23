@@ -22,7 +22,7 @@ def products_page(request):
 	etched_desc = ProductDescription.objects.filter(category='ETCHED').first()
 	faceted_desc = ProductDescription.objects.filter(category='FACETED').first()
 
-	return render(request, 'products_revised.html', {
+	return render(request, 'products.html', {
 		'stained_slides': stained_slides,
 		'etched_slides': etched_slides,
 		'faceted_slides': faceted_slides,
@@ -34,4 +34,4 @@ def contact_page(request):
 
 	contact_image = ContactImage.objects.all()
 
-	return render(request, 'contact_revised.html', {'contact_image': contact_image})
+	return render(request, 'contact.html', {'contact_image': contact_image})
