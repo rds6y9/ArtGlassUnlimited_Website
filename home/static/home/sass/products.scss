@@ -42,7 +42,6 @@ img {
 
 	#glass-type-areas-wrapper {
 		width: 100%;
-		min-height: 500px;
 		background-color: $base-black;
 	}
 
@@ -248,6 +247,12 @@ img {
 }
 
 @media (min-width: $desktop-style-products-width) {
+	#glass-type-areas-wrapper {
+		width: 100%;
+		min-height: 500px;
+		background-color: $base-black;
+	}
+
 	#stained-desc {
 		display: inline-block;
 		position: absolute;

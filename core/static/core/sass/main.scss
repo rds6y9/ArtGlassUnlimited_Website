@@ -23,7 +23,8 @@ body {
 		width: 100%;
 		min-width: 260px;
 		height: $header-height;
-		background-color: $base-white;
+		color: $base-white;
+		background-color: $base-grey;
 		overflow: hidden;
 		z-index: 9001;
 
@@ -51,12 +52,13 @@ body {
 				margin: 0 auto;
 				padding: 0px 15px;
 				border: none;
+				color: $base-white;
 				background-color: inherit;
 		
 				.burger-patty {
 					width: 25px;
 		    		height: 2px;
-		   		 	background-color: $base-black;
+		   		 	background-color: $base-white;
 		    		margin: 6px 0;
 				}
 
@@ -157,10 +159,13 @@ body {
 					li {
 						line-height: 1.5em;
 						text-align: rcenter;
+						
+
 
 						a {
 							color: white;
 							font-size: 0.7em;
+							text-decoration: none;
 						}
 					}
 
@@ -198,15 +203,16 @@ body {
 				a {
 					display: block;
 		   			text-align: center;
-		    		padding: ($header-height / 2 - 10) 30px;
+		    		padding: ($header-height / 2 - 8) 30px;
 		    		text-decoration: none;
 					font-family: Arial;
-					color: $base-black;
+					color: $base-white;
 				}
 		
 				a:hover {
-					background-color: rgba($icon-blue, 0.2);
-					border-bottom: 4px solid $icon-blue;
+					background-color: rgba($base-white, 0.5);
+					color: black;
+					// border-bottom: 4px solid $icon-blue;
 				}
 			}
 		}	

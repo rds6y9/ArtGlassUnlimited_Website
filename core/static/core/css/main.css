@@ -17,7 +17,8 @@ body {
     width: 100%;
     min-width: 260px;
     height: 50px;
-    background-color: #f3f3f3;
+    color: #f3f3f3;
+    background-color: #464f51;
     overflow: hidden;
     z-index: 9001; }
     body header #header-container {
@@ -39,11 +40,12 @@ body {
         margin: 0 auto;
         padding: 0px 15px;
         border: none;
+        color: #f3f3f3;
         background-color: inherit; }
         body header #header-container #dropdown-nav .burger-patty {
           width: 25px;
           height: 2px;
-          background-color: #0a0a0a;
+          background-color: #f3f3f3;
           margin: 6px 0; }
         body header #header-container #dropdown-nav .first-patty {
           margin: 12px 0px 6px 0px; }
@@ -113,7 +115,8 @@ body {
             text-align: rcenter; }
             body #main-container footer #links ul li a {
               color: white;
-              font-size: 0.7em; }
+              font-size: 0.7em;
+              text-decoration: none; }
           body #main-container footer #links ul li:first-child {
             text-decoration: underline; }
 
@@ -136,13 +139,13 @@ body {
         #full-nav ul li a {
           display: block;
           text-align: center;
-          padding: 15px 30px;
+          padding: 17px 30px;
           text-decoration: none;
           font-family: Arial;
-          color: #0a0a0a; }
+          color: #f3f3f3; }
         #full-nav ul li a:hover {
-          background-color: rgba(0, 111, 255, 0.2);
-          border-bottom: 4px solid #006FFF; }
+          background-color: rgba(243, 243, 243, 0.5);
+          color: black; }
 
   #main-container #content {
     padding-bottom: 170px !important; }

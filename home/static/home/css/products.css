@@ -25,7 +25,6 @@ img {
     overflow: hidden; }
   .product-container #glass-type-areas-wrapper {
     width: 100%;
-    min-height: 500px;
     background-color: #0a0a0a; }
   .product-container #Stained #stained-wrapper {
     margin: 0 auto;
@@ -161,6 +160,11 @@ img {
     background-color: #006FFF; }
 
 @media (min-width: 1200px) {
+  #glass-type-areas-wrapper {
+    width: 100%;
+    min-height: 500px;
+    background-color: #0a0a0a; }
+
   #stained-desc {
     display: inline-block;
     position: absolute;
