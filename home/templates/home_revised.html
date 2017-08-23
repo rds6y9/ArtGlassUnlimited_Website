@@ -13,9 +13,13 @@
 			<h1 id="about-title">About Art Glass Unlimited</h1>
 			{% for paragraph in paragraphs %}
 				{% if forloop.counter == 2 %}
-					<img src="{{ home_images.0.image.url }}" />
+					<div class="picture-spot">
+						<img src="{{ home_images.0.image.url }}" />
+					</div>
 				{% elif forloop.counter == 4 %}
-					<img src="{{ home_images.1.image.url }}" />
+					<div class="picture-spot">
+						<img src="{{ home_images.1.image.url }}" />
+					</div>
 				{% endif %}
 				<p class="about-body">{{ paragraph.text }}</p>
 			{% endfor %}

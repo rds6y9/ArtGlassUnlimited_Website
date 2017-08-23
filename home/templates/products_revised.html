@@ -21,10 +21,7 @@
 		<div id="Stained" class="glass-type-area shown-selection">
 			<div id="stained-wrapper" class="type-wrapper">
 				<h1>Stained Glass</h1>
-				<p>Here is some info about stained glass and how truly great it is.
-				The glass itself has been around for a very long time, and the art style is 
-				one that adds great class to any window both residential and commercial.
-				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
+				<p>{{ stained_desc.text }}</p>
 				<div id="stained-carousel" class="product-carousel">
 					{% for stained_slide in stained_slides %}
 						<img src="{{ stained_slide.image.url }}" class="stained-slides" />
@@ -44,10 +41,7 @@
 		<div id="Etched" class="glass-type-area">
 			<div id="etched-wrapper" class="type-wrapper">
 				<h1>Etched Glass</h1>
-				<p>Here is some info about etched glass and how truly great it is.
-				The glass itself has been around for a very long time, and the art style is 
-				one that adds great class to any window both residential and commercial.
-				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
+				<p>{{ etched_desc.text }}</p>
 				<div id="etched-carousel" class="product-carousel">
 					{% for etched_slide in etched_slides %}
 						<img src="{{ etched_slide.image.url }}" class="etched-slides" />
@@ -67,10 +61,7 @@
 		<div id="Faceted" class="glass-type-area">
 			<div id="faceted-wrapper" class="type-wrapper">
 				<h1>Faceted Glass</h1>
-				<p>Here is some info about faceted glass and how truly great it is.
-				The glass itself has been around for a very long time, and the art style is 
-				one that adds great class to any window both residential and commercial.
-				Art Glass Unlimited has been cooking this stuff up since the day we opened our doors!</p>
+				<p>{{ faceted_desc.text }}</p>
 				<div id="faceted-carousel" class="product-carousel">
 					{% for faceted_slide in faceted_slides %}
 						<img src="{{ faceted_slide.image.url }}" class="faceted-slides" />

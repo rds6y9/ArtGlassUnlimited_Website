@@ -1,5 +1,5 @@
 var menu = document.getElementById("dropdown-nav-menu");
-var dropdown_breakpoint = 700;
+var dropdown_breakpoint = 600;
 
 window.onresize = function(event) {
 	if($(window).width() >= dropdown_breakpoint) {
