@@ -1,5 +1,5 @@
 var slideIndex = 0;
-var wide_image_cutoff = 600;
+var wide_image_cutoff = 599;
 var hero = document.getElementById('top-hero');
 var slides = document.getElementsByClassName('hero-slides');
 var wide_slides = document.getElementsByClassName('wide-image');
