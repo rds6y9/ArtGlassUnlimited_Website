@@ -1,16 +1,18 @@
 from django.shortcuts import render
-from .models import HomeImage, HomeParagraph, ProductDescription, ProductSlide, ContactImage
+from .models import HomeImage, ProductDescription, ProductSlide, ContactImage
 
 def home_page(request):
 
-	# home_images = HomeImage.objects.order_by('order')
-	# paragraphs = HomeParagraph.objects.order_by('order')
+	home_images = HomeImage.objects.order_by('order')
 
 	# return render(request, 'home_revised.html', {
 	# 	'home_images': home_images,
 	# 	'paragraphs': paragraphs,})
 
-	return render(request, 'home.html')
+	return render(request, 'home.html', {
+		'home_images': home_images,
+		})
+		
 
 def products_page(request):
 
