@@ -4,21 +4,13 @@ from django.db import models
 class HomeImage(models.Model):
 
 	title = models.CharField(max_length=100, default='')
+	wide_image = models.ImageField(upload_to="home/images/%Y-%m-%d", default='')
 	image = models.ImageField(upload_to="home/images/%Y-%m-%d", default='')
 	date = models.DateField(default='')
 	order = models.IntegerField(default=0)
 
 	def __str__(self):
 		return str(self.title)[:100]
-
-
-class HomeParagraph(models.Model):
-
-	text = models.TextField(default='')
-	order = models.IntegerField(default=0)
-
-	def __str__(self):
-		return str(self.text)[:100]
 
 
 class ProductDescription(models.Model):

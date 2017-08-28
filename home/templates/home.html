@@ -10,8 +10,10 @@
 
 <!--======================== HERO STUFF =========================-->
 <div id="top-hero">
-	<img class="hero-slides" src="{% static 'home/img/home/21_9image.jpg' %}" />
-	<img class="hero-slides" src="{% static 'home/img/home/wideimage.jpg' %}" />
+	{% for home_image in home_images %}
+		<img class="hero-slides standard-image" src="{{ home_image.image.url }}" />
+		<img class="hero-slides wide-image" src="{{ home_image.wide_image.url }}" />
+	{% endfor %}
 	<div id="top-hero-caption-over">
 		<h1>Commited to Quality Glass Products Since 1900</h1>
 		<p><a href="{% url 'products' %}"><span class="clickable">Check Them Out!</span></a></p>
