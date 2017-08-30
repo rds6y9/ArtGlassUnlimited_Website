@@ -1,5 +1,9 @@
 @import "../../../../core/static/core/sass/variables";
 
+* {
+	font-family: $standard-font-set;
+}
+
 #top-hero {
 	position: relative;
 	width: 100%;
@@ -25,7 +29,7 @@
 		z-index: 9000;
 
 		h1 {
-			font-family: Sans-serif;
+			// font-family: $standard-font-set;
 			font-size: 1.5em;
 			padding: 30px 0px;
 			line-height: 1.5em;
@@ -83,7 +87,7 @@
 	background-color: $base-grey;
 
 	h1 {
-		font-family: Sans-serif;
+		// font-family: Sans-serif;
 		font-size: 1.5em;
 		padding: 30px 0px;
 		line-height: 1.5em;
@@ -155,7 +159,7 @@
 		 		line-height: 1.5em;
 
 		 		p {
-		 			font-family: Arial;
+		 			// font-family: Arial;
 		 			font-size: 1.0em;
 		 			color: $base-black;
 				}

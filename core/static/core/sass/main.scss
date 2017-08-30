@@ -3,7 +3,7 @@
 @import "variables";
 
 * {
-	font-family: Sans-Serif;
+	font-family: $standard-font-set;
 	font-size: 20px;
 }
 
@@ -39,7 +39,7 @@ body {
 				float: left;
 	
 				h1 {
-					font-family: Sans-Serif;
+					// font-family: Sans-Serif;
 					font-size: 20px;
 					line-height: $header-height;
 					padding: 0px 30px;
@@ -87,7 +87,7 @@ body {
 								
 						a {
 							display: block;
-							font-family: Arial;
+							// font-family: Arial;
 							text-decoration: none;
 							color: $base-black;
 							padding: 10px 0px;

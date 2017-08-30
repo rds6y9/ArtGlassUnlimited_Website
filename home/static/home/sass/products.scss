@@ -1,5 +1,8 @@
 @import "../../../../core/static/core/sass/variables";
 
+* {
+	font-family: $standard-font-set;
+}
 
 img {
 	max-width: 100%;
@@ -51,7 +54,6 @@ img {
 		#stained-wrapper {
 			margin: 0 auto;
 			color: white;
-			font-family: Arial;
 			text-align: center;
 
 			h1 {
@@ -94,7 +96,6 @@ img {
 		#etched-wrapper {
 			margin: 0 auto;
 			color: white;
-			font-family: Arial;
 			text-align: center;
 
 			h1 {
@@ -136,7 +137,6 @@ img {
 		#faceted-wrapper {
 			margin: 0 auto;
 			color: white;
-			font-family: Arial;
 			text-align: center;
 
 			h1 {
@@ -174,37 +174,43 @@ img {
 		}
 	}
 
-	.prev, .next {
-	    cursor: pointer;
-	    position: absolute;
-	    top: 47%;
-	    padding: 10px;
-	    font-size: 18px;
-	    color: $base-white;
-	    font-weight: bold;
-	    user-select: none;
-	    background-color: $base-black-transparent;
-	}
-	
-	.prev {
-	    left: 0;
-	}
-	
-	.next {
-	    right: 0;
-	}
-
 	.counter {
-		display: inline-block;
 		position: absolute;
-		bottom: 0;
 		left: 50%;
-   		transform: translateX(-50%);
-		padding: 6px 20px;
-		background-color: rgba(0,0,0,0.5);
+		transform: translateX(-50%);
+		bottom: 0;
+		color: $base-white;
+		background-color: $base-black-transparent;
 
-		* {
+		.prev, .next {
 			display: inline;
+			user-select: none;
+			cursor: pointer !important;
+			font-size: 1.5em;
+			padding: 0 12px;
+			bottom: 0;
+			color: $base-white;
+			line-height: 40px;
+			z-index: 9000;
+		}
+
+		.prev {
+			float: left;
+			padding-right: 20px;
+		}
+
+		.next {
+			float: right;
+			padding-left: 20px;
+		}
+
+		.slide-tracker-container {
+			display: inline-block;
+			padding-top: 4px;
+
+			.numerator, .denominator, .im-lazy {
+				display: inline;
+			}
 		}
 	}
 

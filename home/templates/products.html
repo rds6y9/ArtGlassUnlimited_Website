@@ -27,15 +27,17 @@
 					<img src="{{ stained_slide.image.url }}" class="stained-slides" />
 				{% endfor %}
 				{% if stained_slides %}
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
   					<div class="counter">
-  						<p class="numerator" id="stained-numerator">1</p>
-  						 /
-  						<p class="denominator">{{ stained_slides.count }}</p>
+  						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="slide-tracker-container">
+  							<p class="numerator" id="stained-numerator">1</p>
+  							<p class="im-lazy">/</p>
+  							<p class="denominator">{{ stained_slides.count }}</p>
+  						</div>
   					</div>
   				{% endif %}
-  				</div> <!-- End of testing -->
+  				</div> <!-- End of stained-carousel -->
 			</div>
 		</div> <!-- End of stained-wrapper -->
 	</div> <!-- End of Stained -->
@@ -48,12 +50,14 @@
 					<img src="{{ etched_slide.image.url }}" class="etched-slides" />
 				{% endfor %}
 				{% if etched_slides %}
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
   					<div class="counter">
-  						<p class="numerator" id="etched-numerator">1</p>
-  						/
-  						<p class="denominator">{{ etched_slides.count }}</p>
+  						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="slide-tracker-container">
+  							<p class="numerator" id="etched-numerator">1</p>
+  							<p class="im-lazy">/</p>
+  							<p class="denominator">{{ etched_slides.count }}</p>
+  						</div>
   					</div>
   				{% endif %}
 			</div>
@@ -69,12 +73,14 @@
 						<img src="{{ faceted_slide.image.url }}" class="faceted-slides" />
 					{% endfor %}
 					{% if faceted_slides %}
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
   						<div class="counter">
-  							<p class="numerator" id="faceted-numerator">1</p>
-  							/
-  							<p class="denominator">{{ faceted_slides.count }}</p>
+  							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  							<div class="slide-tracker-container">
+  								<p class="numerator" id="faceted-numerator">1</p>
+  								<p class="im-lazy">/</p>
+  								<p class="denominator">{{ faceted_slides.count }}</p>
+  							</div>
   						</div>
   					{% endif %}
 				</div>

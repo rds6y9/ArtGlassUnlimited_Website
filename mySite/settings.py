@@ -83,6 +83,9 @@ DATABASES = {
         'PASSWORD': 'hamandcheese',
         'HOST': 'localhost',
         'PORT': '',     # default of 5432
+        'TEST': {
+            'NAME': 'agutestdb',
+        }
     }
 }
 

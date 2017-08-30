@@ -1,3 +1,6 @@
+* {
+  font-family: "Lato", sans-serif; }
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -30,7 +33,6 @@ img {
   .product-container #Stained #stained-wrapper {
     margin: 0 auto;
     color: white;
-    font-family: Arial;
     text-align: center; }
     .product-container #Stained #stained-wrapper h1 {
       font-size: 1.5em;
@@ -57,7 +59,6 @@ img {
   .product-container #Etched #etched-wrapper {
     margin: 0 auto;
     color: white;
-    font-family: Arial;
     text-align: center; }
     .product-container #Etched #etched-wrapper h1 {
       font-size: 1.5em;
@@ -84,7 +85,6 @@ img {
   .product-container #Faceted #faceted-wrapper {
     margin: 0 auto;
     color: white;
-    font-family: Arial;
     text-align: center; }
     .product-container #Faceted #faceted-wrapper h1 {
       font-size: 1.5em;
@@ -109,30 +109,34 @@ img {
         position: relative; }
       .product-container #Faceted #faceted-wrapper #faceted-carousel .shown-slide {
         display: block; }
-  .product-container .prev, .product-container .next {
-    cursor: pointer;
-    position: absolute;
-    top: 47%;
-    padding: 10px;
-    font-size: 18px;
-    color: #f3f3f3;
-    font-weight: bold;
-    user-select: none;
-    background-color: rgba(10, 10, 10, 0.9); }
-  .product-container .prev {
-    left: 0; }
-  .product-container .next {
-    right: 0; }
   .product-container .counter {
-    display: inline-block;
     position: absolute;
-    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    padding: 6px 20px;
-    background-color: rgba(0, 0, 0, 0.5); }
-    .product-container .counter * {
-      display: inline; }
+    bottom: 0;
+    color: #f3f3f3;
+    background-color: rgba(10, 10, 10, 0.9); }
+    .product-container .counter .prev, .product-container .counter .next {
+      display: inline;
+      user-select: none;
+      cursor: pointer !important;
+      font-size: 1.5em;
+      padding: 0 12px;
+      bottom: 0;
+      color: #f3f3f3;
+      line-height: 40px;
+      z-index: 9000; }
+    .product-container .counter .prev {
+      float: left;
+      padding-right: 20px; }
+    .product-container .counter .next {
+      float: right;
+      padding-left: 20px; }
+    .product-container .counter .slide-tracker-container {
+      display: inline-block;
+      padding-top: 4px; }
+      .product-container .counter .slide-tracker-container .numerator, .product-container .counter .slide-tracker-container .denominator, .product-container .counter .slide-tracker-container .im-lazy {
+        display: inline; }
   .product-container .clearfix {
     width: 100%;
     height: 100%;

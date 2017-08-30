@@ -1,3 +1,6 @@
+* {
+  font-family: "Lato", sans-serif; }
+
 #top-hero {
   position: relative;
   width: 100%;
@@ -19,7 +22,6 @@
     background-color: rgba(10, 10, 10, 0.9);
     z-index: 9000; }
     #top-hero #top-hero-caption-over h1 {
-      font-family: Sans-serif;
       font-size: 1.5em;
       padding: 30px 0px;
       line-height: 1.5em;
@@ -57,7 +59,6 @@
   text-align: center;
   background-color: #464f51; }
   #top-hero-caption-under h1 {
-    font-family: Sans-serif;
     font-size: 1.5em;
     padding: 30px 0px;
     line-height: 1.5em;
@@ -76,7 +77,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  max-width: 1300px;
+  max-width: 1350px;
   min-height: 200px;
   margin: 0 auto;
   margin-top: 30px; }
@@ -114,7 +115,6 @@
         border-radius: 6px;
         line-height: 1.5em; }
         #badges #badge-wrap .badge-container #description p {
-          font-family: Arial;
           font-size: 1.0em;
           color: #0a0a0a; }
 
