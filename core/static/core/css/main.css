@@ -16,14 +16,14 @@ body {
     top: 0;
     width: 100%;
     min-width: 260px;
-    height: 50px;
+    height: 60px;
     color: #f3f3f3;
-    background-color: #464f51;
+    background-color: rgba(10, 10, 10, 0.9);
     overflow: hidden;
     z-index: 9001; }
     body header #header-container {
       max-width: 1500px;
-      height: 50px;
+      height: 60px;
       margin: 0 auto; }
       body header #header-container #logo {
         display: inline-block;
@@ -31,11 +31,11 @@ body {
         body header #header-container #logo h1 {
           font-family: Sans-Serif;
           font-size: 20px;
-          line-height: 50px;
+          line-height: 60px;
           padding: 0px 30px; }
       body header #header-container #dropdown-nav {
         display: inline-block;
-        height: 50px;
+        height: 60px;
         float: right;
         margin: 0 auto;
         padding: 0px 15px;
@@ -52,7 +52,7 @@ body {
       body header #header-container #dropdown-nav-menu {
         display: none;
         position: fixed;
-        top: 50px;
+        top: 60px;
         right: 0;
         min-width: 100px;
         border: 1px solid #0a0a0a;
@@ -82,7 +82,7 @@ body {
     body #main-container #content {
       width: 100%;
       max-width: 1500px;
-      padding-top: 50px;
+      padding-top: 60px;
       padding-bottom: 249px;
       margin: 0 auto; }
     body #main-container footer {
@@ -92,7 +92,7 @@ body {
       min-height: 150px;
       text-align: center;
       color: #f3f3f3;
-      background-color: #464f51;
+      background-color: rgba(10, 10, 10, 0.9);
       z-index: 100; }
       body #main-container footer #ownership {
         display: block;
@@ -139,7 +139,7 @@ body {
         #full-nav ul li a {
           display: block;
           text-align: center;
-          padding: 17px 30px;
+          padding: 22px 30px;
           text-decoration: none;
           font-family: Arial;
           color: #f3f3f3; }

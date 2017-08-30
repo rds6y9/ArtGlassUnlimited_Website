@@ -38,8 +38,8 @@
 		cursor: pointer !important;
 		position: absolute;
 		font-size: 1.5em;
+		padding: 8px;
 		bottom: 0;
-		padding: 12px 12px;
 		color: $base-white;
 		background-color: $base-black-transparent;
 		z-index: 9000;
@@ -104,49 +104,56 @@
 	margin: 0 auto;
 	margin-top: 30px;
 
-	.badge-container {
-		width: 200px;
-		height: 200px;
-		margin: 0 auto;
+	#badge-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $lighter-grey;
+		width: 230px;
+		height: 240px;
 		margin-bottom: 20px;
-		padding: 10px 5px;
-		border: 1px solid $base-black;
-		-webkit-box-shadow: -11px 14px 16px -10px rgba(0,0,0,0.75);
-		-moz-box-shadow: -11px 14px 16px -10px rgba(0,0,0,0.75);
-		box-shadow: -11px 14px 16px -10px rgba(0,0,0,0.75);	
-		text-align: center;
 
-		#image {
-			height: 20%;
-			margin-bottom: 5%;
-		}
-
-		.separator {
-			width: 70%;
-			height: 1px;
+		.badge-container {
+			width: 200px;
+			height: 200px;
 			margin: 0 auto;
-			background-color: $base-black;
+			// margin-bottom: 20px;
+			padding: 10px 5px;
+			// border: 1px solid $base-black;
+			background-color: $base-white;
+			text-align: center;
+
+			#image {
+				height: 20%;
+				margin-bottom: 5%;
+			}
+
+			.separator {
+				width: 70%;
+				height: 1px;
+				margin: 0 auto;
+				background-color: $base-black;
+			}
+
+			#description {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 98%;
+			 	height: 65%;
+			 	margin: 0 auto;
+		 		text-align: center;
+		 		border-radius: 6px;
+		 		line-height: 1.5em;
+
+		 		p {
+		 			font-family: Arial;
+		 			font-size: 1.0em;
+		 			color: $base-black;
+				}
+			}
 		}
-
-		#description {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 98%;
-		 	height: 65%;
-		 	margin: 0 auto;
-		 	text-align: center;
-		 	border-radius: 6px;
-		 	line-height: 1.5em;
-
-		 	p {
-		 		font-family: Arial;
-		 		font-size: 1.0em;
-		 		color: $base-black;
-
-		 	}
-		}
-	}
+	}	
 }
 
 #products-link {

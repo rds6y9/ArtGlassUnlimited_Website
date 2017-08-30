@@ -14,7 +14,8 @@ img {
       font-size: 1em;
       background-color: white; }
       .product-container #filter-zone #glass-type-selector option {
-        font-size: 1em; }
+        font-size: 1em;
+        padding: 200px 200px; }
   .product-container .glass-type-area {
     display: none; }
   .product-container .shown-selection {
@@ -43,7 +44,7 @@ img {
     .product-container #Stained #stained-wrapper #stained-carousel {
       display: flex;
       position: relative;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       z-index: 0;
       justify-content: center;
@@ -70,7 +71,7 @@ img {
     .product-container #Etched #etched-wrapper #etched-carousel {
       display: flex;
       position: relative;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       z-index: 0;
       justify-content: center;
@@ -98,7 +99,7 @@ img {
     .product-container #Faceted #faceted-wrapper #faceted-carousel {
       display: flex;
       position: relative;
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
       z-index: 0;
       justify-content: center;
@@ -117,7 +118,7 @@ img {
     color: #f3f3f3;
     font-weight: bold;
     user-select: none;
-    background-color: rgba(10, 10, 10, 0.75); }
+    background-color: rgba(10, 10, 10, 0.9); }
   .product-container .prev {
     left: 0; }
   .product-container .next {
@@ -165,51 +166,15 @@ img {
     min-height: 500px;
     background-color: #0a0a0a; }
 
-  #stained-desc {
+  .glass-desc {
     display: inline-block;
-    position: absolute;
     float: left;
     max-width: 35%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2.5%;
+    padding-left: 2.5%;
+    padding-bottom: 0px;
     line-height: 2em; }
 
-  #etched-desc {
-    display: inline-block;
-    position: absolute;
-    float: left;
-    max-width: 35%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2.5%;
-    line-height: 2em; }
-
-  #faceted-desc {
-    display: inline-block;
-    position: absolute;
-    float: left;
-    max-width: 35%;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 2.5%;
-    line-height: 2em; }
-
-  #stained-carousel {
-    display: inline-block;
-    float: right;
-    max-width: 55%;
-    height: 450px;
-    right: 2.5%; }
-
-  #etched-carousel {
-    display: inline-block;
-    float: right;
-    max-width: 55%;
-    height: 450px;
-    right: 2.5%; }
-
-  #faceted-carousel {
+  .product-carousel {
     display: inline-block;
     float: right;
     max-width: 55%;
