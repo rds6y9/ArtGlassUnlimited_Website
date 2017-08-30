@@ -18,11 +18,11 @@
 		<h1>Commited to Quality Glass Products Since ----</h1>
 		<p><a href="{% url 'products' %}"><span class="clickable">Check Them Out!</span></a></p>
 	</div> <!-- End of top-hero-caption-over -->
-	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
   	<div class="counter">
+  		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
   		<p id="top-hero-numerator">1</p>
-  							/
+  		<p id="im-lazy">/</p>
   		<p id="top-hero-denominator">{{ home_images.count }}<p>
   	</div>
 </div> <!-- End of top-hero -->
@@ -37,40 +37,40 @@
 	<h1>Why Choose Art Glass Unlimited?</h1>
 <div id="badges">
 	<div id="badge-wrap">
-	<div class="badge-container">
-		<img id="image" src="{% static 'home/img/home/salesman.png' %}" />
-		<div class="separator"></div>
-		<p id="description">
-			Friendly and knowledgable professionals dedicated to making your experience great!
-		</p>
-	</div>
-	</div>
-	<div id="badge-wrap">
-	<div class="badge-container">
-		<img id="image" src="{% static 'home/img/home/puzzle.png' %}" />
-		<div class="separator"></div>
-		<p id="description">
-			The highest quality glass to fill the missing piece in any environment.
-		</p>
-	</div>
+		<div class="badge-container">
+			<img id="image" src="{% static 'home/img/home/salesman.png' %}" />
+			<div class="separator"></div>
+			<p id="description">
+				Friendly and knowledgable professionals dedicated to making your experience great!
+			</p>
+		</div>
 	</div>
 	<div id="badge-wrap">
-	<div class="badge-container">
-		<img id="image" src="{% static 'home/img/home/clock.png' %}" />
-		<div class="separator"></div>
-		<p id="description">
-			Quality projects completed in a timely manner.
-		</p>
-	</div>
+		<div class="badge-container">
+			<img id="image" src="{% static 'home/img/home/puzzle.png' %}" />
+			<div class="separator"></div>
+			<p id="description">
+				The highest quality glass to fill the missing piece in any environment.
+			</p>
+		</div>
 	</div>
 	<div id="badge-wrap">
-	<div class="badge-container">
-		<img id="image" src="{% static 'home/img/home/savings.png' %}" />
-		<div class="separator"></div>
-		<p id="description">
-			Products to top off any environment at an affordable price!
-		</p>
+		<div class="badge-container">
+			<img id="image" src="{% static 'home/img/home/clock.png' %}" />
+			<div class="separator"></div>
+			<p id="description">
+				Quality projects completed in a timely manner.
+			</p>
+		</div>
 	</div>
+	<div id="badge-wrap">
+		<div class="badge-container">
+			<img id="image" src="{% static 'home/img/home/savings.png' %}" />
+			<div class="separator"></div>
+			<p id="description">
+				Products to top off any environment at an affordable price!
+			</p>
+		</div>
 	</div>
 </div>
 </div>

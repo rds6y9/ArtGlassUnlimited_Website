@@ -14,14 +14,15 @@ html {
 }
 
 body {
-	min-width: 100%;
+	width: auto !important;
+	min-width: $min-width;
 	min-height: 100%;
 
 	header {
 		position: fixed;
 		top: 0;
 		width: 100%;
-		min-width: 260px;
+		min-width: 320px;
 		height: $header-height;
 		color: $base-white;
 		background-color: $base-black-transparent;

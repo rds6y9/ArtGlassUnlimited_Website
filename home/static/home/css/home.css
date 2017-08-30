@@ -24,30 +24,32 @@
       padding: 30px 0px;
       line-height: 1.5em;
       color: #f3f3f3; }
-  #top-hero .prev, #top-hero .next {
-    user-select: none;
-    cursor: pointer !important;
-    position: absolute;
-    font-size: 1.5em;
-    padding: 8px;
-    bottom: 0;
-    color: #f3f3f3;
-    background-color: rgba(10, 10, 10, 0.9);
-    z-index: 9000; }
-  #top-hero .prev {
-    left: 0; }
-  #top-hero .next {
-    right: 0; }
   #top-hero .counter {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    padding: 12px 12px;
     color: #f3f3f3;
     background-color: rgba(10, 10, 10, 0.9); }
     #top-hero .counter * {
       display: inline; }
+    #top-hero .counter .prev, #top-hero .counter .next {
+      user-select: none;
+      cursor: pointer !important;
+      font-size: 1.5em;
+      padding: 0 12px;
+      bottom: 0;
+      color: #f3f3f3;
+      line-height: 40px;
+      z-index: 9000; }
+    #top-hero .counter .prev {
+      float: left;
+      padding-right: 20px; }
+    #top-hero .counter .next {
+      float: right;
+      padding-left: 20px; }
+    #top-hero .counter #top-hero-numerator, #top-hero .counter #top-hero-denominator, #top-hero .counter #im-lazy {
+      line-height: 40px; }
 
 #top-hero-caption-under {
   width: 100%;
