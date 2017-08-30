@@ -21,7 +21,7 @@
 		<div id="stained-wrapper" class="type-wrapper">
 			<div class="clearfix">
 				<h1>Stained Glass</h1>
-				<p id="stained-desc">{{ stained_desc.text }}</p>
+				<p id="stained-desc" class="glass-desc">{{ stained_desc.text }}</p>
 				<div id="stained-carousel" class="product-carousel">
 				{% for stained_slide in stained_slides %}
 					<img src="{{ stained_slide.image.url }}" class="stained-slides" />
@@ -35,14 +35,14 @@
   						<p class="denominator">{{ stained_slides.count }}</p>
   					</div>
   				{% endif %}
-  				</div>
+  				</div> <!-- End of testing -->
 			</div>
 		</div> <!-- End of stained-wrapper -->
 	</div> <!-- End of Stained -->
 	<div id="Etched" class="glass-type-area">
 		<div id="etched-wrapper" class="type-wrapper">
 			<h1>Etched Glass</h1>
-			<p id="etched-desc">{{ etched_desc.text }}</p>
+			<p id="etched-desc" class="glass-desc">{{ etched_desc.text }}</p>
 			<div id="etched-carousel" class="product-carousel">
 				{% for etched_slide in etched_slides %}
 					<img src="{{ etched_slide.image.url }}" class="etched-slides" />
@@ -62,21 +62,23 @@
 	<div id="Faceted" class="glass-type-area">
 		<div id="faceted-wrapper" class="type-wrapper">
 			<h1>Faceted Glass</h1>
-			<p id="faceted-desc">{{ faceted_desc.text }}</p>
-			<div id="faceted-carousel" class="product-carousel">
-				{% for faceted_slide in faceted_slides %}
-					<img src="{{ faceted_slide.image.url }}" class="faceted-slides" />
-				{% endfor %}
-				{% if faceted_slides %}
-					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  					<a class="next" onclick="plusSlides(1)">&#10095;</a>
-  					<div class="counter">
-  						<p class="numerator" id="faceted-numerator">1</p>
-  						/
-  						<p class="denominator">{{ faceted_slides.count }}</p>
-  					</div>
-  				{% endif %}
-			</div>
+			<div id="testing">
+				<p id="faceted-desc" class="glass-desc">{{ faceted_desc.text }}</p>
+				<div id="faceted-carousel" class="product-carousel">
+					{% for faceted_slide in faceted_slides %}
+						<img src="{{ faceted_slide.image.url }}" class="faceted-slides" />
+					{% endfor %}
+					{% if faceted_slides %}
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+  						<div class="counter">
+  							<p class="numerator" id="faceted-numerator">1</p>
+  							/
+  							<p class="denominator">{{ faceted_slides.count }}</p>
+  						</div>
+  					{% endif %}
+				</div>
+			</div> <!-- End of testing -->
 		</div> <!-- End of faceted-wrapper -->
 	</div> <!-- End of Faceted -->
 	</div> <!-- End of glass-type-areas-wrapper -->

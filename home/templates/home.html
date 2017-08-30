@@ -15,7 +15,7 @@
 		<img class="hero-slides wide-image" src="{{ home_image.wide_image.url }}" />
 	{% endfor %}
 	<div id="top-hero-caption-over">
-		<h1>Commited to Quality Glass Products Since 1900</h1>
+		<h1>Commited to Quality Glass Products Since ----</h1>
 		<p><a href="{% url 'products' %}"><span class="clickable">Check Them Out!</span></a></p>
 	</div> <!-- End of top-hero-caption-over -->
 	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -23,7 +23,7 @@
   	<div class="counter">
   		<p id="top-hero-numerator">1</p>
   							/
-  		<p id="top-hero-denominator">2<p>
+  		<p id="top-hero-denominator">{{ home_images.count }}<p>
   	</div>
 </div> <!-- End of top-hero -->
 <div id="top-hero-caption-under">
@@ -36,6 +36,7 @@
 <div id="badges-container">
 	<h1>Why Choose Art Glass Unlimited?</h1>
 <div id="badges">
+	<div id="badge-wrap">
 	<div class="badge-container">
 		<img id="image" src="{% static 'home/img/home/salesman.png' %}" />
 		<div class="separator"></div>
@@ -43,6 +44,8 @@
 			Friendly and knowledgable professionals dedicated to making your experience great!
 		</p>
 	</div>
+	</div>
+	<div id="badge-wrap">
 	<div class="badge-container">
 		<img id="image" src="{% static 'home/img/home/puzzle.png' %}" />
 		<div class="separator"></div>
@@ -50,6 +53,8 @@
 			The highest quality glass to fill the missing piece in any environment.
 		</p>
 	</div>
+	</div>
+	<div id="badge-wrap">
 	<div class="badge-container">
 		<img id="image" src="{% static 'home/img/home/clock.png' %}" />
 		<div class="separator"></div>
@@ -57,12 +62,15 @@
 			Quality projects completed in a timely manner.
 		</p>
 	</div>
+	</div>
+	<div id="badge-wrap">
 	<div class="badge-container">
 		<img id="image" src="{% static 'home/img/home/savings.png' %}" />
 		<div class="separator"></div>
 		<p id="description">
 			Products to top off any environment at an affordable price!
 		</p>
+	</div>
 	</div>
 </div>
 </div>

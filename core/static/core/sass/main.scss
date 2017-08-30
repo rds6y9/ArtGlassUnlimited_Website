@@ -24,7 +24,7 @@ body {
 		min-width: 260px;
 		height: $header-height;
 		color: $base-white;
-		background-color: $base-grey;
+		background-color: $base-black-transparent;
 		overflow: hidden;
 		z-index: 9001;
 
@@ -128,7 +128,7 @@ body {
 			text-align: center;
 			// border-top: 1px solid $base-grey;
 			color: $base-white;
-			background-color: $base-grey;
+			background-color: $base-black-transparent;
 			z-index: 100;
 
 			#ownership {
