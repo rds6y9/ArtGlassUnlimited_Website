@@ -208,12 +208,11 @@ body {
 		    		text-decoration: none;
 					font-family: Arial;
 					color: $base-white;
+					transition: background-color 200ms ease-in-out;
 				}
 		
 				a:hover {
-					background-color: rgba($base-white, 0.5);
-					color: black;
-					// border-bottom: 4px solid $icon-blue;
+					background-color: $icon-blue;
 				}
 			}
 		}	

@@ -141,10 +141,10 @@ body {
           padding: 22px 30px;
           text-decoration: none;
           font-family: Arial;
-          color: #f3f3f3; }
+          color: #f3f3f3;
+          transition: background-color 200ms ease-in-out; }
         #full-nav ul li a:hover {
-          background-color: rgba(243, 243, 243, 0.5);
-          color: black; }
+          background-color: #006FFF; }
 
   #main-container #content {
     padding-bottom: 170px !important; }
