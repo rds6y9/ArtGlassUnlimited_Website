@@ -132,6 +132,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = '/home/ryan/Documents/Development/VirtualEnvironments/ArtGlassUnlimited/ArtGlassUnlimited_Website/'
+MEDIA_ROOT = '/home/ryan/Documents/Development/VirtualEnvironments/ArtGlassUnlimited/ArtGlassUnlimited_Website/uploads'
 
 MEDIA_URL = '/uploads/'
