@@ -13,12 +13,12 @@ img {
     text-align: center; }
     .product-container #filter-zone #glass-type-selector {
       margin: 10px 0px;
-      padding: 5px 30%;
+      width: 70%;
       font-size: 1em;
+      text-align: center;
       background-color: white; }
       .product-container #filter-zone #glass-type-selector option {
-        font-size: 1em;
-        padding: 200px 200px; }
+        font-size: 1em; }
   .product-container .glass-type-area {
     display: none; }
   .product-container .shown-selection {
