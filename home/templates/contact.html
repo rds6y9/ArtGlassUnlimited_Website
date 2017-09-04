@@ -11,43 +11,50 @@
 	<div id="location">
 		<h1>Find Us At...</h1>
 		<div id="google-map"></div> <!-- End of google-map -->
-		<p><strong>Address: </strong><br /> 214 S 4th Street 
-		<br /> Pacific, MO 63069 <br /> (123) 456-7890</p>
 	</div> <!-- End of location -->
-	<div id="availability">
-		<h1>Business Hours</h1>
-		<table>
-			<tr>
-				<td>Monday:</td>
-				<td>8:00am - 4:30pm</td>
-			</tr>
-			<tr>
-				<td>Tuesday:</td>
-				<td>8:00am - 4:30pm</td>
-			</tr>
-			<tr>
-				<td>Wednesday:</td>
-				<td>8:00am - 4:30pm</td>
-			</tr>
-			<tr>
-				<td>Thursday:</td>
-				<td>8:00am - 4:30pm</td>
-			</tr>
-			<tr>
-				<td>Friday:</td>
-				<td>8:00am - 4:30pm</td>
-			</tr>
-			<tr>
-				<td>Saturday:</td>
-				<td>8:00am - 12:00pm</td>
-			</tr>
-			<tr>
-				<td>Sunday:</td>
-				<td>Closed</td>
-			</tr>
-		</table>
-		<p id="holiday-clause"><i>*Note: Hours may vary according to holidays and severe weather.</i></p>
-	</div> <!-- End of availability -->
+    <div class="clearfix"> 
+	    <div id="availability">
+            <h1>Address:</h1>
+            <p>214 S 4th Street<br />Pacific, MO 63069<br />(314) 568-2799</p>
+		    <h1>Business Hours</h1>
+		    <table>
+		    	<tr>
+		    		<td>Monday:</td>
+		    		<td>8:00am - 4:30pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Tuesday:</td>
+		    		<td>8:00am - 4:30pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Wednesday:</td>
+		    		<td>8:00am - 4:30pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Thursday:</td>
+		    		<td>8:00am - 4:30pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Friday:</td>
+		    		<td>8:00am - 4:30pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Saturday:</td>
+		    		<td>8:00am - 12:00pm</td>
+		    	</tr>
+		    	<tr>
+		    		<td>Sunday:</td>
+		    		<td>Closed</td>
+		    	</tr>
+		    </table>
+		     <p id="holiday-clause"><i>*Note: Hours may vary according to holidays and severe weather.</i></p>
+	    </div> <!-- End of availability -->
+        <div id="farewell">
+            <h1>We Hope To See You Soon!</h1>
+            <img class="contact-image" src="{{ contact_image.image.url }}"/>
+        </div>
+    </div> 
+<script src="{% static "/home/js/contact/resize.js" %}"></script>
 <script type="text/javascript" src="{% static "/home/js/contact/map.js" %}"></script>
 <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyDGmNIcU7qOiXhKHG7umFnbUI4E_0yQ7us&callback=initMap">

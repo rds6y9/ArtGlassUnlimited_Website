@@ -12,7 +12,9 @@ img {
     padding: 20px 0px;
     text-align: center; }
     .product-container #filter-zone #glass-type-selector {
+      user-select: none;
       margin: 10px 0px;
+      padding: 5px 0px;
       width: 70%;
       font-size: 1em;
       text-align: center;

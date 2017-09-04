@@ -130,9 +130,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = '/Users/Ryan/Documents/Development/VirtualEnvironments/mySite/mySite/mySite/uploads/'
+MEDIA_ROOT = '/home/ryan/Documents/Development/VirtualEnvironments/ArtGlassUnlimited/ArtGlassUnlimited_Website/'
 
 MEDIA_URL = '/uploads/'

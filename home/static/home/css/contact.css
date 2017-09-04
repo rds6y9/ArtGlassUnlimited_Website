@@ -10,12 +10,12 @@
       width: 100%;
       height: 400px;
       background: #464f51; }
-    .contact-container #location p {
-      line-height: 2em;
-      text-align: center;
-      padding: 20px 0px; }
   .contact-container #availability h1 {
     font-size: 1.5em;
+    text-align: center;
+    padding: 20px 0px; }
+  .contact-container #availability p {
+    line-height: 2em;
     text-align: center;
     padding: 20px 0px; }
   .contact-container #availability table {
@@ -27,5 +27,32 @@
   .contact-container #availability #holiday-clause {
     padding-top: 20px;
     text-align: center; }
+  .contact-container #farewell {
+    margin: 0 auto;
+    text-align: center; }
+    .contact-container #farewell h1 {
+      font-size: 1.5em;
+      text-align: center;
+      padding: 20px 0px; }
+    .contact-container #farewell .contact-image {
+      width: 100%; }
+
+@media (min-width: 1200px) {
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+  #availability {
+    display: inline-block;
+    width: 35%;
+    left: 2.5%;
+    float: left; }
+
+  #farewell {
+    display: inline-block;
+    width: 55%;
+    right: 2.5%;
+    float: right; } }
 
 /*# sourceMappingURL=contact.css.map */

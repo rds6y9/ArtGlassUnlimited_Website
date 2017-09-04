@@ -34,6 +34,6 @@ def products_page(request):
 
 def contact_page(request):
 
-	contact_image = ContactImage.objects.all()
+	contact_image = ContactImage.objects.first()
 
 	return render(request, 'contact.html', {'contact_image': contact_image})

@@ -17,12 +17,6 @@
 			height: 400px;
 			background: $base-grey;
 		}
-
-		p {
-			line-height: 2em;
-			text-align: center;
-			padding: 20px 0px;
-		}
 	}
 
 	#availability {
@@ -32,6 +26,12 @@
 			text-align: center;
 			padding: 20px 0px;
 		}
+
+        p {
+            line-height: 2em;
+            text-align: center;
+            padding: 20px 0px;
+        }
 
 		table {
 		margin: 0 auto;		
@@ -48,4 +48,42 @@
 			text-align: center;
 		}
 	}
+    
+    #farewell {
+        margin: 0 auto;
+        text-align: center;
+
+        h1 {
+            font-size: 1.5em;
+            text-align: center;
+            padding: 20px 0px;
+        }
+        
+        .contact-image {
+            // $max-content-width seems way too big.
+            width: 100%;    
+        }
+    }
+}
+
+@media (min-width: $contact-desktop-breakpoint) {
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }   
+    
+    #availability {
+        display: inline-block;
+        width: 35%;
+        left: 2.5%;
+        float: left;
+    }
+    
+    #farewell {
+        display: inline-block;
+        width: 55%;
+        right: 2.5%;
+        float: right;
+    }
 }
