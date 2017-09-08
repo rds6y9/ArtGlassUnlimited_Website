@@ -48,7 +48,7 @@ img {
 
 	#glass-type-areas-wrapper {
 		width: 100%;
-		background-color: $base-black;
+		background-color: $base-black-transparent;
 	}
 
 	#Stained {
@@ -248,11 +248,22 @@ img {
 	
 	.clickable {
 		user-select: none;
+        display: inline-block;
 		padding: 12px 20px;
+        margin-bottom: 10px;
 		color: $base-white;
 		border-radius: 20px;
 		background-color: $icon-blue;
+        transition: transform .3s ease-in-out;
 	}
+
+    .within-text {
+        line-height: 1.2em;
+    }
+
+    .clickable:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (min-width: $desktop-style-products-width) {

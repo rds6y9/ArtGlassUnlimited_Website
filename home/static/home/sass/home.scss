@@ -82,7 +82,7 @@
 
 #top-hero-caption-under {
 	width: 100%;
-	min-height: 150px;
+	min-height: 160px;
 	text-align: center;
 	background-color: $base-grey;
 
@@ -120,7 +120,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color: $lighter-grey;
+		background-color: $mid-grey;
 		width: 230px;
 		height: 240px;
 		margin-bottom: 20px;
@@ -194,10 +194,21 @@ a {
 
 .clickable {
 	user-select: none;
+    display: inline-block;
 	padding: 12px 20px;
+    margin-bottom: 10px;
 	color: $base-white;
 	border-radius: 20px;
 	background-color: $icon-blue;
+    transition: transform .3s ease-in-out;
+}
+
+.within-text {
+    line-height: 1.2em;
+}
+
+.clickable:hover {
+    transform: scale(1.2); 
 }
 
 @media (min-width: $header-collapse) {

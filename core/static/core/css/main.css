@@ -19,7 +19,7 @@ body {
     min-width: 320px;
     height: 60px;
     color: #f3f3f3;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(30, 30, 30, 0.9);
     overflow: hidden;
     z-index: 9001; }
     body header #header-container {
@@ -91,7 +91,7 @@ body {
       min-height: 150px;
       text-align: center;
       color: #f3f3f3;
-      background-color: rgba(10, 10, 10, 0.9);
+      background-color: rgba(30, 30, 30, 0.9);
       z-index: 100; }
       body #main-container footer #ownership {
         display: block;

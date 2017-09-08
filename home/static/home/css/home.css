@@ -19,7 +19,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    background-color: rgba(10, 10, 10, 0.9);
+    background-color: rgba(30, 30, 30, 0.9);
     z-index: 9000; }
     #top-hero #top-hero-caption-over h1 {
       font-size: 1.5em;
@@ -32,7 +32,7 @@
     transform: translateX(-50%);
     bottom: 0;
     color: #f3f3f3;
-    background-color: rgba(10, 10, 10, 0.9); }
+    background-color: rgba(30, 30, 30, 0.9); }
     #top-hero .counter * {
       display: inline; }
     #top-hero .counter .prev, #top-hero .counter .next {
@@ -55,7 +55,7 @@
 
 #top-hero-caption-under {
   width: 100%;
-  min-height: 150px;
+  min-height: 160px;
   text-align: center;
   background-color: #464f51; }
   #top-hero-caption-under h1 {
@@ -85,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #B2B2B2;
+    background-color: #929292;
     width: 230px;
     height: 240px;
     margin-bottom: 20px; }
@@ -138,10 +138,19 @@ a {
 
 .clickable {
   user-select: none;
+  display: inline-block;
   padding: 12px 20px;
+  margin-bottom: 10px;
   color: #f3f3f3;
   border-radius: 20px;
-  background-color: #006FFF; }
+  background-color: #006FFF;
+  transition: transform .3s ease-in-out; }
+
+.within-text {
+  line-height: 1.2em; }
+
+.clickable:hover {
+  transform: scale(1.2); }
 
 @media (min-width: 620px) {
   #badges > .badge-container > #image {

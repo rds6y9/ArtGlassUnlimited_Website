@@ -31,7 +31,7 @@ img {
     overflow: hidden; }
   .product-container #glass-type-areas-wrapper {
     width: 100%;
-    background-color: #0a0a0a; }
+    background-color: rgba(30, 30, 30, 0.9); }
   .product-container #Stained #stained-wrapper {
     margin: 0 auto;
     color: white;
@@ -117,7 +117,7 @@ img {
     transform: translateX(-50%);
     bottom: 0;
     color: #f3f3f3;
-    background-color: rgba(10, 10, 10, 0.9); }
+    background-color: rgba(30, 30, 30, 0.9); }
     .product-container .counter .prev, .product-container .counter .next {
       display: inline;
       user-select: none;
@@ -161,10 +161,17 @@ img {
     text-decoration: none; }
   .product-container .clickable {
     user-select: none;
+    display: inline-block;
     padding: 12px 20px;
+    margin-bottom: 10px;
     color: #f3f3f3;
     border-radius: 20px;
-    background-color: #006FFF; }
+    background-color: #006FFF;
+    transition: transform .3s ease-in-out; }
+  .product-container .within-text {
+    line-height: 1.2em; }
+  .product-container .clickable:hover {
+    transform: scale(1.2); }
 
 @media (min-width: 1200px) {
   #glass-type-areas-wrapper {
