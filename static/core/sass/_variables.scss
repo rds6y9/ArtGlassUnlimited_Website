@@ -1,0 +1,45 @@
+
+////////// Color Palette ///////////////
+// Black
+$base-black: rgba(10, 10, 10, 1);
+$base-black-transparent: rgba(30, 30, 30, 0.90);
+// Green
+$base-green: rgba(113, 215, 159, 1);
+// White
+$base-white: rgba(243, 243, 243, 1);
+$base-white-hex: #F3F3F3;
+// Blue
+$base-blue: rgba(60, 145, 230, 1);
+$icon-blue: #006FFF;
+// Grey
+$base-grey: rgba(70, 79, 81, 1);
+$base-grey-transparent: rgba(70, 79, 81, 0.75);
+$mid-grey: #929292;
+$lighter-grey: #B2B2B2;
+// Red
+$base-red: rgba(185, 95, 137, 1);
+////////////////////////////////////////
+
+///////// Dimensions ////////////////////
+$header-height: 60px;
+$footer-height: 150px;
+$extended-footer-height: 229px;
+$h1-size: 1.5em;
+/////////////////////////////////////////
+
+///////// Breakpoints ///////////////////
+$min-width: 320px;
+$header-collapse: 620px;
+$max-content-width: 1550px;
+
+// For Products Page //
+$desktop-style-products-width: 1200px;
+/////////////////////////////////////////
+
+// For Contact Page //
+$contact-desktop-breakpoint: 1200px;
+///////////////////////////////////
+
+//////////// FONTS /////////////////////
+$standard-font-set: 'Lato', sans-serif;
+////////////////////////////////////////

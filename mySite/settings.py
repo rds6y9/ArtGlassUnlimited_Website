@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
-import os
+import dj_database_url, os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +25,7 @@ SECRET_KEY = 'u8z1dbe)sy^^kj3jvmgqma2l_m&vivo#3tz@%k9#+cpy2-2obg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ancient-plateau-58255.herokuapp.com']
+ALLOWED_HOSTS = ['ancient-plateau-58255.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -89,6 +89,9 @@ DATABASES = {
     }
 }
 
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'.update(db_from_env)
+
 # Default SQLite db
 # 'ENGINE': 'django.db.backends.sqlite3',
 # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
@@ -96,7 +99,7 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+#AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -135,3 +138,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = '/home/ryan/Documents/Development/VirtualEnvironments/ArtGlassUnlimited/ArtGlassUnlimited_Website/uploads'
 
 MEDIA_URL = '/uploads/'
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

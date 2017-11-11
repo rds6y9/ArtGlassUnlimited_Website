@@ -1,0 +1,256 @@
+/* CSS for core/base.html */
+ 
+@import "variables";
+
+* {
+	font-family: $standard-font-set;
+	font-size: 20px;
+}
+
+html {
+	width: 100%;
+	min-width: $min-width;
+	min-height: 100%;
+}
+
+body {
+	width: auto !important;
+	min-width: $min-width;
+	min-height: 100%;
+
+	header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		min-width: 320px;
+		height: $header-height;
+		color: $base-white;
+		background-color: $base-black-transparent;
+		overflow: hidden;
+		z-index: 9001;
+
+		#header-container {
+			max-width: $max-content-width;
+			height: $header-height;
+			margin: 0 auto;
+
+			#logo {
+				display: inline-block;
+				float: left;
+	
+				h1 {
+					// font-family: Sans-Serif;
+					font-size: 20px;
+					line-height: $header-height;
+					padding: 0px 30px;
+				}
+			}
+	
+			#dropdown-nav {
+				display: inline-block;
+				height: $header-height;
+				float: right;
+				margin: 0 auto;
+				padding: 0px 15px;
+				border: none;
+				color: $base-white;
+				background-color: inherit;
+		
+				.burger-patty {
+					width: 25px;
+		    		height: 2px;
+		   		 	background-color: $base-white;
+		    		margin: 6px 0;
+				}
+
+				.first-patty {
+					margin: 12px 0px 6px 0px;
+				}
+			}
+	
+			#dropdown-nav-menu {
+				display: none;
+				position: fixed;
+				top: $header-height;
+				right: 0;
+				min-width: 100px;
+				border: 1px solid $base-black;
+				background-color: $base-white;
+				z-index: 101;
+		
+				ul {
+					list-style-type: none;	
+	
+					li {
+						text-align: center;
+						border-bottom: 1px solid $base-black;
+								
+						a {
+							display: block;
+							// font-family: Arial;
+							text-decoration: none;
+							color: $base-black;
+							padding: 10px 0px;
+						}	
+		
+						a:hover {
+							background-color: $base-grey;
+							color: white;
+						}
+					}
+				}
+			}
+	
+			#full-nav {
+				display: none;
+			}
+		}
+	}
+
+	#main-container {
+		position: relative;
+		min-height: 100vh;
+		margin: 0 auto;
+		background-color: $base-white;
+	
+		#content {
+			width: 100%;
+			max-width: $max-content-width;
+			padding-top: $header-height;
+			padding-bottom: $extended-footer-height + 20px;
+			margin: 0 auto;
+		}
+	
+		footer {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			min-height: $footer-height;
+			text-align: center;
+			// border-top: 1px solid $base-grey;
+			color: $base-white;
+			background-color: $base-black-transparent;
+			z-index: 100;
+
+			#ownership {
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+
+				#theirs {
+					height: 0.4 * $footer-height;
+					padding-top: 25px;
+				}
+
+				#mine {
+					height: 0.3 * $footer-height;
+					font-size: 0.7em;
+					color: $base-white;
+				}
+			}
+
+			#links {
+				display: block;
+
+				ul {
+					display: inline-block;
+					list-style-type: none;
+
+
+					li {
+						line-height: 1.5em;
+						text-align: rcenter;
+						
+
+
+						a {
+							color: white;
+							font-size: 0.7em;
+							text-decoration: none;
+						}
+					}
+
+					li:first-child {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
+	
+	
+@media (min-width: $header-collapse) {
+
+	#dropdown-nav {
+		display: none !important;
+	}
+
+	#full-nav {
+		display: inline-block !important;
+		float: right;
+
+		ul {
+			display: flex;
+			display: -ms-flexbox;
+			-ms-flex-direction: row;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+
+			li {
+				-ms-flex: 1;
+	
+				a {
+					display: block;
+		   			text-align: center;
+		    		padding: ($header-height / 2 - 8) 30px;
+		    		text-decoration: none;
+					font-family: Arial;
+					color: $base-white;
+					transition: background-color 200ms ease-in-out;
+				}
+		
+				a:hover {
+					background-color: $icon-blue;
+				}
+			}
+		}	
+	}
+
+	#main-container {
+
+		#content {
+			padding-bottom: $footer-height + 20px !important;
+		}
+	}
+
+	footer {
+
+		#ownership {
+			display: inline-block !important;
+			width: 50%;
+			margin: 0 auto;
+			height: $footer-height;
+			text-align: left;
+
+			p {
+				text-align: left;
+				margin-left: 10px;
+			}
+		}
+
+		#links {
+			display: inline-block !important;
+			width: 50%;
+			height: $footer-height;
+			float: right;
+
+			ul {
+				margin: 18px 10px 0px 0px;
+				float: right;
+				text-align: right;
+			}
+		}
+	}
+}
