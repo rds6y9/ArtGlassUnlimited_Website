@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'agudb',
         'USER': 'artglassuser',
         'PASSWORD': 'hamandcheese',
-        'HOST': 'localhost',
+        'HOST': 'ancient-plateau-58255.herokuapp.com',
         'PORT': '',     # default of 5432
         'TEST': {
             'NAME': 'agutestdb',
