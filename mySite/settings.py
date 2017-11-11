@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'agudb',
-        'USER': 'rds6y9',
+        'USER': 'artglassuser',
         'PASSWORD': 'hamandcheese',
         'HOST': 'localhost',
         'PORT': '',     # default of 5432
